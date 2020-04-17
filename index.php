@@ -7,10 +7,17 @@
     <img id="preloader__img" src="asset/src/images/preloader.webp" alt="preloader">
 </section>
 
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quo obcaecati, dicta consectetur numquam eum nobis enim laudantium voluptas incidunt hic officia, veritatis dolores earum quod natus non velit necessitatibus. Repellendus pariatur delectus at. Ut dignissimos obcaecati itaque voluptatibus, nihil esse soluta accusamus delectus ipsam sit sequi eveniet tempora maiores, veritatis dolorem reprehenderit error adipisci similique molestias. Est, odio nemo. Ipsum aliquid itaque quaerat rerum, placeat corporis nobis id ducimus quo inventore officia explicabo necessitatibus dolorum culpa, fugit impedit earum animi recusandae, dolor illum molestiae laborum voluptas in. Consequatur in minima nostrum inventore eius. Tenetur alias earum iusto excepturi labore!</p>
+<section id="welcome_section">
 
-    <button>click</button>
+        <p class="tl_1">Welcome</p>
+        <p class="tl_2">First Read This Carefully</p>
+        <p class="tl_3">
+            
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, accusamus corporis! Sit consequuntur perferendis quos amet saepe error nesciunt tempora repellat sequi modi ipsum magni provident fugiat doloribus maiores ab iure corrupti vero, laborum non pariatur illo! Odio nostrum illum dolor aliquid? Maxime, ab! Iure, similique. Nostrum autem sapiente, sequi dicta hic earum alias unde excepturi nisi nobis animi non, saepe asperiores, molestiae quaerat? Quae beatae blanditiis quod soluta possimus unde alias excepturi ut nemo. Fugiat accusantium aperiam vero rem blanditiis. Non enim eaque odio cupiditate perferendis eligendi, iusto pariatur omnis dicta architecto necessitatibus! Ipsa, deserunt pariatur! Odit, iusto adipisci!
+        </p>
+
+        <p class="tl_4">Are You Ready ?</p>
+        <button class="tl_5">Yes</button>
 </section>
 
 

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Poppins:400,600,700,800,800i|Rubik:400,500,700,700i,900&display=swap&subset=latin-ext');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: $color-bg;
+    font-size: 1.4rem;
+    font-family: 'Rubik', sans-serif;
+    line-height: 2.4rem;
+    overflow-x: hidden;
+    
+    a{
+        cursor: none !important;
+    }
+}
+
+.error404{
+    cursor: pointer;
+    a{
+        cursor: pointer !important;
+    }
+}
+
+body::-webkit-scrollbar {
+    width: .3em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba($color-green,.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $color-green;
+  outline: 1px solid slategrey;
+}
+
+p,ul,ol,p,span,i,h1,h2,h3,h4,h5,h6,img,div{
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+[class^="flaticon"]{
+    font-size: 20px;
+}
+
+
+ul,ol{
+    list-style: none;
+}
+
+
+a,span,i{
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+#mx-100{
+    @include laptop{
+        flex: 0 0  100%;
+        max-width: 100%;
+    }
+}
+
+#d-none{
+    @include large-tablet{
+        display: none;
+    }
+}
+
+
+.pointer{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $color-red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    transition: width .3s, height .3s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    
+}
+
+.pointer-large{
+    width: 60px;
+    height: 60px;
+
+
+}

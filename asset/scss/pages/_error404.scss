@@ -1,0 +1,61 @@
+body.error404{
+    background: $color-error;
+    position: relative;
+    text-align: center;
+    .error-img{
+        width: 100%;
+        max-width: 60rem;
+    }
+
+    @include tablet{
+        padding-bottom: 5rem;
+    }
+    
+    .error-widget{
+        &__title{
+            font-size: 20rem;
+            color: $color-white;
+            line-height: 6rem;
+
+            @include tablet{
+                font-size: 10rem;
+            }
+        }
+        .textwidget{
+            color: #fff;
+            font-size: 2rem;
+            background: $color-error;
+            position: relative;
+            z-index: 1;
+            p{
+                text-transform: uppercase;
+                padding:1rem 2rem;
+
+            }
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            @include mobile{
+                flex-direction: column;
+            }
+
+            li{
+                margin: 1rem .5rem;
+                a{
+                    color: #fff;
+                    background: $color-red;
+                    padding: 1rem 3rem;
+                    box-shadow: 0 1rem 3rem rgba($color-red, .3);
+                    border-radius: 5px;
+                    &:hover{
+                        background: #fff;
+                        color: $color-red;
+                    }
+                }
+            }
+        }
+    }
+    
+}

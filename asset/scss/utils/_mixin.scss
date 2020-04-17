@@ -1,0 +1,49 @@
+@mixin equal_round($value, $radius){
+    width: $value;
+    height: $value;
+    text-align: center;
+    line-height: $value;
+    border-radius: $radius;
+}
+
+
+
+// responsive breakpoints
+@mixin small_mobile {
+    @media (max-width: $small_mobile){
+        @content;
+    }
+}
+
+
+@mixin mobile {
+    @media (max-width: $mobile){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media  (max-width: $tablet){
+        @content;
+    }
+}
+
+
+@mixin large_tablet {
+    @media (max-width: $large_tablet){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (max-width: $laptop){
+        @content;
+    }
+}
+
+@mixin small_desktop {
+    @media (max-width: $small_desktop){
+        @content;
+    }
+}
+

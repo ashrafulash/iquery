@@ -1,0 +1,103 @@
+.single-page{
+    &__banner{
+        background:linear-gradient(to bottom, rgba(#000,.6), rgba(#000,.4)), url('../images/blog-bg-default.jpg');
+        background-size: cover;
+        background-position: center bottom;
+        padding: 10rem 0  0 0;
+
+        .entry-title{
+                font-size: 4rem;
+                font-family: 'Poppins',sans-serif;
+                color: #fff;
+                max-width: 80rem;
+                margin: 0 auto;
+                text-align: center;
+                font-weight: 500;
+                position: relative;
+                margin-bottom: 10rem;
+                @include mobile{
+                    font-size: 2.6rem; 
+                }
+
+                &:before{
+                    position: absolute;
+                    content: '';
+                    width: 20rem;
+                    height: 5px;
+                    background: $color-green;
+                    bottom: -4rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+        }
+
+        &__details{
+            background:rgba(#000, .1);
+            text-align: center;
+            padding: 5rem 2rem;
+            @include mobile{
+                padding: 5rem 0rem;
+            }
+
+            span{
+                color: #fff;
+                font-size: 16px;
+                padding: 0 1rem;
+                font-weight: 400;
+                font-family: 'Rubik',sans-serif;
+            }
+        }
+
+        &__thumbnail{
+            .wp-post-image{
+                width: 100%;
+                height: auto;
+            }
+            .excerpt{
+                background: rgba($color-white,.8);
+                max-width: 50rem;
+                padding: 8rem 5rem;
+                transform: translate(-104px, 76px);
+                outline: 4px solid $color-white;
+                outline-offset: 2rem;
+
+                @include small_desktop{
+                    padding: 4rem 5rem;
+                    transform: translate(-104px, 10px);
+                    outline: 0;
+                }
+
+                @include laptop{
+                    outline: 0;
+                    transform: translate(0, 0px);
+                }
+
+                @include tablet{
+                    max-width: 100%;
+                }
+
+                @include mobile{
+                    padding: 8rem 1rem;
+                    text-align: center;
+
+                    .xs_social_share_widget{
+                        margin: 4rem auto;
+                    }
+                }
+
+                p{
+                    font-size: 1.6rem;
+                    color: #000;
+                    font-family: 'Rubik',sans-serif;
+                    line-height: 26px;
+                }
+
+                .xs_social_share_widget{
+                    margin-top: 4rem;
+                }
+            }
+
+
+        }
+    }
+}

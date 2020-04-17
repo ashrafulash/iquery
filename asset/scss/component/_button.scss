@@ -1,0 +1,57 @@
+.btn{
+    background: $primary-main;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    padding:1.5rem 3rem;
+    color: #fff;
+    font-family: 'Rubik',sans-serif;
+    box-shadow: 5px 15px 25px rgba($primary-main, .4);
+    vertical-align: middle;
+
+    i{
+        font-size: 2rem;
+        transform: translateX(-1rem);
+        @extend %transition;
+        opacity: 0;
+    }
+
+    span{
+        transform: translateX(1rem);
+        @extend %transition;
+    }
+
+    &:hover,
+    &:focus{
+        box-shadow: 5px 15px 25px rgba($color-red, .4);
+        color: #fff;
+        outline: 0;
+        background: $color-red;
+
+        i{
+            opacity: 1;
+            transform: translateX(0)
+        }
+
+        span{
+            transform: translateX(0)
+        }
+        
+
+    }
+}
+
+.e-btn{
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    color: $primary-main;
+
+    &:active,
+    &:focus,
+    &:hover{
+        outline:0;
+        box-shadow: 0;
+    }
+}

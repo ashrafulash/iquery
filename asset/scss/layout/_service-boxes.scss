@@ -1,0 +1,199 @@
+.home{
+    .service-boxes{
+        padding-bottom: 17rem;
+            @include tablet{
+            padding-bottom: 5rem; 
+        }
+    }
+}
+
+.service-boxes{
+    position: relative;
+    padding-left: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    background: url(../images/service-box-bg) no-repeat left center;
+    background-size: contain;
+
+    @include small-desktop{
+        padding-left: 5rem;
+    }
+
+    @include laptop{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @include tablet{
+        padding-left: 1rem;
+        padding-right: 3rem;
+    }
+
+    .left{
+        z-index: 10;
+        position: relative;
+        ul{
+            display: flex;
+
+            @include mobile{
+                flex-direction: column;
+                max-width: 100%;
+            }
+            li{
+                background: $color-white;
+                box-shadow: 0 1rem 4rem rgba(#000, .09);
+                padding: 2.5rem;
+                border-radius: 2rem;
+                display: flex;
+                align-items: center;
+                max-width: 40rem;
+                justify-content: space-between;
+                margin:2rem;
+
+                @include tablet{
+                    margin: 1rem;
+                }
+
+                @include mobile{
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+                
+                .logo{
+                    @include equal_round(10rem, 50%);
+                    @extend %transition;
+                    min-width: 10rem;
+                    background: $color-bg;
+                    img{
+                        width: 6rem;
+                    }
+
+                    @include small-desktop{
+                        @include equal_round(7rem, 50%);
+                        min-width: 7rem;
+
+                        img{
+                            width: 4.5rem;
+                        }
+                    }
+                }
+
+                .details{
+                    padding: 0 2rem;
+                    h2{
+                        font-family: 'Poppins',sans-serif;
+                        color: $primary-main;
+                        font-weight: 700;
+                        font-size: 2.5rem;
+                        text-transform: uppercase;
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+
+                        @include laptop{
+                            font-size: 3.6rem;
+                        }
+                    }
+
+                    p{
+                        font-size: 1.6rem;
+                        color: $primary-heading;
+                        text-transform: uppercase;
+                        font-family: 'Rubik',sans-serif;
+
+                    }
+                }
+
+                .link{
+                        background: $primary-main;
+                        color: $color-white;
+                        display: inline-block;
+                        min-height: 10rem;
+                        line-height: 10rem;
+                        padding: 0 1rem;
+                        font-size: 2.5rem;
+                        border-radius: 3rem;
+                        @extend %transition;
+                        
+                    
+                    }
+
+                &:hover{
+                    .link{
+                            box-shadow: .3rem 1rem 3rem rgba($color-red, .3);
+                            background: $color-red;
+                    }
+
+                    .logo{
+                        box-shadow: .3rem 1rem 3rem rgba(#000, .1);
+                        background: #fff;
+                    }
+                }
+
+                
+
+                @include laptop{
+                    flex-direction: column;
+                    max-width: 100%;
+                    width: 50%;
+                    padding: 5rem 2rem;
+                    border-radius: 3px;
+
+                    .logo{
+                        @include equal_round(10rem, 10%);
+                        min-width: 10rem;
+
+                        img{
+                            width: 6rem;
+                        }
+                    }
+
+                    .details{
+                        padding: 1rem 0;
+                        text-align: center;
+                        h2{
+                            padding-top: 2rem;
+                        }
+                    }
+
+                    .link{
+                        min-height: 5rem;
+                        height: 5.5rem;
+                        width: 20rem;
+                        line-height: 5.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .middle-row{
+            transform: translateX(10rem);
+
+            @include small-desktop{
+                transform: translateX(5rem);
+            }
+
+            @include laptop{
+                transform: translateX(0rem);
+            }
+        }
+    }
+
+    .right{
+        img{
+            position: absolute;
+            max-width: 35rem;
+            top: -10rem;
+            z-index: 0;
+            right: 10rem;
+
+            @include small-desktop{
+                right: 3rem;
+            }
+
+            @include laptop{
+                display: none;
+            }
+        }
+    }
+}

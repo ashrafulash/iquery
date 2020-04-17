@@ -1,0 +1,101 @@
+.navbar-default{
+    background-color: #fff;
+    border-bottom: 1px solid rgba($primary-body,.2);
+    padding: 2rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+    @include tablet{
+       padding: 1rem 0; 
+    }
+
+    &__logo{
+                text-align: left;
+                img{
+                    max-width: 6rem;
+                    min-width: 5rem;
+                }
+                h1{
+                    font-family: 'Rubik',sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    padding: 0px 0 5px 1px;
+                    border-bottom: 1px solid $primary-main;
+                    font-size: 18px;
+                    display: inline-block;
+                    color: $primary;
+                    margin-left: 1rem;
+
+                }
+            }
+
+    .default-navbar{
+        ul{
+            margin-bottom: 0;
+            li{
+            display: inline-block;
+            position: relative;
+            a{
+                color: $primary-heading;
+                font-size: 1.8rem;
+                margin-left: 3rem;
+
+                @include mobile{
+                    margin-left: 1rem;
+                }
+
+                    &:hover{
+                        color : $primary-main   
+                    }
+            }
+
+            > ul {
+                    position: absolute;
+                    background: #fff;
+                    width: 20rem;
+                    top: 5rem;
+                    right: 0;
+                    box-shadow: 0 0 2rem rgba($primary-heading, .4);
+                
+                    li{
+                        display: block;
+                        padding: 1.5rem 3rem;
+                        text-align: right;
+                        border-bottom: 1px solid $color-bg;
+                    }
+                }
+
+            &:nth-child(3){
+                > a{
+                        background: $color-red;
+                        padding: 1rem 3rem;
+                        display: inline-block;
+                        color: #fff;
+                        box-shadow: 0 1rem 2rem rgba($color-red, .4);
+                        @include tablet{
+                            padding: 1rem 2rem;
+                        }
+                    }
+            }
+        }
+        }  
+    }
+    .sidebar-btn{
+            margin-top: 1rem;
+            display: none;
+
+            @include mobile{
+                position: fixed;
+                right: 1rem;
+                top: 6rem;
+                background: $color-white;
+                @include equal_round(5rem, 10%);
+                border: 1px solid $color-bg;
+            }
+        }
+
+}
+
+
+

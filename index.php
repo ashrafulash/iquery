@@ -37,8 +37,8 @@
             Dropbox is the world’s first smart workspace. We bring all your team’s content together while letting you use the tools you love. And we help cut through the clutter, surfacing what matters most. orld’s first smart workspace. We bring all your team’s content together while letting you use
           </p>
           <span class="moving-icon">
-            <img class="arrow-1" src="asset/images/svg/arrow-1" alt="iquery">
-            <img class="arrow-2" src="asset/images/svg/arrow-1" alt="iquery">
+            <img class="arrow-1" src="asset/images/svg/arrow-1.svg" alt="iquery">
+            <img class="arrow-2" src="asset/images/svg/arrow-1.svg" alt="iquery">
           </span>
       </div>
     </div>

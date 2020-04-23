@@ -1,0 +1,14 @@
+#home_sidebar{
+    width: 40vw;
+    position: fixed;
+    background: url('../../images/triangle-mosaic.png');
+    background-size: 100px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 11;
+
+    p{
+        padding: 40px 100px;
+    }
+}

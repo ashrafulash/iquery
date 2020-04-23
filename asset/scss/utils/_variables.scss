@@ -1,14 +1,17 @@
+:root{
+--primary: #0D2F81;
+--primary-main: #FFE7AA;
+--primary-heading: #A1A6B1;
+--color-black:#101010;
+--color-white: #fff;
+--color-transparent : transparent;
+}
 
-$primary: #303778;
-$primary-main: #4F78E0;
-$primary-heading: #A1A6B1;
-$primary-body: #BABACC;
-$color-bg: #E9EEF7;
-$color-red : #EF4C6A;
-$color-green : #53CC99;
-$color-white: #fff;
-$color-error : #3AD3AA;
 
+$btn-sp: #007BFF;
+$btn-ss: #D3DBE7;
+
+$padding-y: 100px 0;
 
 $small_mobile: 360px;
 $mobile: 575.98px;
@@ -18,5 +21,6 @@ $laptop: 1199.98px;
 $small_desktop: 1600px;
 
 $body-max : 180rem;
-
+$poppins : 'Poppins', sans-serif;
+$rubik : 'Rubik', sans-serif;
 

@@ -4,3 +4,30 @@
     -moz-transition: all linear .3s;
     -o-transition: all linear .3s;
 }
+
+
+%paragraph{
+    font-family: $rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+%title{
+    font-family: $poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 46px;
+}
+
+%ripple-btn{
+    background: var(--primary-heading);
+    font-size: 18px;
+    font-family: $rubik;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 48px;
+    overflow: hidden;
+
+}

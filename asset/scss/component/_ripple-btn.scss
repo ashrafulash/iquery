@@ -1,0 +1,43 @@
+
+.i-btn{
+    @extend %ripple-btn;
+    box-shadow: 0 3px 0 $btn-sp;
+    position: relative;
+    &:hover{
+        background: transparent !important;
+        box-shadow: 0 3px 0 $btn-ss;
+    }
+}
+.ripple{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--primary-main);
+}
+
+.btn-text{
+    position: relative;
+    z-index: 2;
+}
+
+.i-btn{
+    .ripple{
+        width: 0;
+        height: 0;
+        @extend %transition;
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        
+    }
+    &:hover{
+        .ripple{
+            width: 100%;
+            height: 100%;
+            border-radius: 10%;
+            transform: translate(-50%, -50%) scale(3);
+        }
+    }
+}
+

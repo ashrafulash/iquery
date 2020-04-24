@@ -48,10 +48,10 @@
 <section id="about" style="background : var(--primary-main)">
   <div class="cont-inner">
       <div class="row">
-          <div class="col-lg-7">
+          <div class="col-lg-7 col-md-7">
               <img class="about-hero-image" src="asset/images/about-hero.jpg" alt="about hero image">
           </div>
-          <div class="col-lg-5 d-flex align-items-center">
+          <div class="col-lg-5 col-md-5 d-flex align-items-center">
               <div class="content">
                   <h2 class="title">Say goodbye to busywork</h2>
                   <P class="des">
@@ -80,7 +80,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-6">
                 <div class="content">
                     <div class="content__holder">
                         <div class="content__box ins-1 active">
@@ -107,18 +107,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7">
-                <h2 class="ins-target-1">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos sint temporibus quo cupiditate ut nesciunt ex in, similique vel nemo ipsa voluptatem nam, minima inventore exercitationem dicta expedita doloremque dolorem! Fuga sapiente reiciendis aperiam modi quasi reprehenderit amet voluptas deleniti accusamus, quos dignissimos doloribus eum quod, saepe nemo consequuntur exercitationem cumque sit magni in nihil molestiae esse officiis? Laborum, nostrum. Blanditiis reprehenderit est rerum aperiam maxime repudiandae ut molestiae mollitia dolor, error laudantium consectetur, repellendus eaque explicabo pariatur, soluta quas enim commodi dolorum libero exercitationem neque voluptate reiciendis recusandae? Minus nisi deleniti eos iusto quidem praesentium molestias repudiandae pariatur nesciunt, reprehenderit unde dolore itaque, fuga facilis velit rem recusandae veritatis 
-                </h2>
-                <br>
-                <h2 class="ins-target-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eaque earum aspernatur nisi ut magnam, nesciunt molestiae asperiores harum est delectus beatae veniam commodi laborum, illo nam totam. Magni asperiores deserunt assumenda doloremque deleniti, dolorum facere porro? In dolore ducimus, explicabo sit reprehenderit alias tempore illo ipsa, officiis incidunt aperiam dignissimos atque itaque culpa optio minima pariatur quibusdam hic ut rerum! Dolore qui, similique accusamus animi, magnam illum laborum quidem a architecto laboriosam nihil rem ipsum, accusantium aliquam itaque beatae cupiditate excepturi tenetur perspiciatis corrupti. Commodi tenetur, soluta reiciendis dolores odit autem maxime dignissimos quasi illum ea, quae culpa officiis veniam velit quia est illo assumenda. Quasi odit alias perspiciatis rerum in, consectetur accusantium cumque delectus sunt inventore voluptas expedita corrupti sequi dolore porro magnam voluptatum id veritatis ducimus neque ipsa. Cupiditate ullam necessitatibus explicabo, enim veniam tenetur quod. Illo expedita tenetur enim similique esse cum beatae deleniti, reiciendis impedit iusto rerum distinctio repudiandae doloremque quisquam quibusdam nemo. Laborum veniam quasi reprehenderit dolore error ducimus sequi rerum ullam quam, possimus tempore dolor facere nihil alias, corporis voluptatum. Necessitatibus dignissimos quasi ab neque incidunt nostrum ex aliquam consequuntur facilis in sint dolor quo, id illo nemo quae corrupti laudantium possimus ad?
-                </h2>
-                <br>
-                <h2 class="ins-target-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic illum a, sint, reprehenderit nulla magni dolore aliquam libero quas deleniti aperiam eum minus sed officiis? Animi harum porro, illum iste similique recusandae perferendis, voluptatibus autem sint, culpa laboriosam cupiditate. Sequi praesentium eos, in molestias nam quis at minus maxime, quam quos aliquam. Atque veniam accusamus quas? Quasi accusamus dolore non provident, dolorem quis, et quisquam modi, in nam aspernatur optio ad quidem veniam voluptatem! Quasi iste fugiat quam in, fugit aperiam ducimus commodi. Quo explicabo placeat totam eveniet perspiciatis commodi, mollitia vel aliquam atque hic, est molestias quam ab corrupti voluptatibus beatae nesciunt voluptatum esse asperiores, itaque expedita eligendi deserunt? Ad eligendi odit aspernatur. Vel facere dolorem, saepe, neque fugit doloribus dolore sapiente, ratione quibusdam repellendus explicabo. Optio cumque quibusdam iusto hic nesciunt quae aliquam dolore fuga laboriosam voluptates aliquid ad, adipisci vel incidunt, numquam porro odit est vitae!
-                </h2>
+            <div class="col-lg-7 col-md-6">
+                <div class="ins-target-1">
+                    <img class="w-100" src="asset/images/instruction-1.png" alt="instruction-1.png">
+                </div>
+                <div class="ins-target-2">
+                        <img class="w-100" src="asset/images/instruction-2.png" alt="instruction-2.png">
+                </div>
+                <div class="ins-target-3">
+                      <img class="w-100" src="asset/images/instruction-3.png" alt="instruction-3.png">
+                </div>
             </div>
         </div>
     </div>
@@ -126,16 +124,83 @@
 
 
 <section id="client" style="background : var(--color-white)">
-  section-4
-
-  <h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores eius nam blanditiis facilis voluptatem architecto minus? Iste est voluptatibus, veniam doloribus minima harum eveniet itaque voluptatum quia ipsum. Eos nihil accusamus illum nisi quis nam eligendi, dignissimos ipsa dolorum molestias quaerat perspiciatis quibusdam iusto iste qui earum est, id repudiandae enim quo. Veniam velit sint earum ab eum dolorum dolor sit qui voluptates expedita. Sequi mollitia temporibus accusantium? Amet consequuntur, quos laboriosam voluptatibus cupiditate, praesentium ea blanditiis velit consectetur veniam unde modi? Deleniti sequi quam culpa dignissimos dicta veritatis, consequatur quas corporis mollitia facilis ex quis dolorem magni similique.
-  </h2>
+    <div class="cont-inner">
+        <div class="heading">
+            <h2 class="title">Our sister Concerns</h2>
+            <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sequi excepturi deserunt rem animi distinctio.</p>
+        </div>
+        <ul class="client-slider">
+            <li><img class="w-100" src="asset/images/clients/client-1.png" alt="client-1"></li>
+            <li><img class="w-100" src="asset/images/clients/client-3.png" alt="client-3"></li>
+            <li><img class="w-100" src="asset/images/clients/client-6.png" alt="client-6"></li>
+            <li><img class="w-100" src="asset/images/clients/client-5.png" alt="client-5"></li>
+            <li><img class="w-100" src="asset/images/clients/client-2.png" alt="client-2"></li>
+            <li><img class="w-100" src="asset/images/clients/client-4.png" alt="client-4"></li>        
+            <li><img class="w-100" src="asset/images/clients/client-7.png" alt="client-7"></li>
+            <li><img class="w-100" src="asset/images/clients/client-8.png" alt="client-8"></li>
+            <li><img class="w-100" src="asset/images/clients/client-9.png" alt="client-9"></li>
+        </ul>
+    </div>
 </section>
 
 
 <footer style="background : var(--color-black)">
-    footer
+    <div class="cont-inner">
+      <div class="content ">
+          <div class="row">
+              <div class="col-lg-2 offset-lg-1 col-md-3">
+                  <ul class="footer-memu">
+                    <li><h2>Partners</h2></li>
+                    <li><a href="//invitationcentre.com/">Invitation English...</a></li>
+                    <li><a href="//invitationcentre.com/ielts/">Invitation IELTS...</a></li>
+                    <li><a href="//invitationcentre.com/idnc/">Day & Night Care</a></li>
+                    <li><a href="//www.facebook.com/invitationsportsnews">Sports Club</a></li>
+                    <li><a href="//invitationcentre.com/">Invitation ICT Centre</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-2 col-md-3">
+                  <ul class="footer-memu">
+                    <li><h2>Products</h2></li>
+                    <li><a href="//sheet.invitationcentre.com/">Invitation Sheet</a></li>
+                    <li><a href="//quiz.invitationcentre.com/">Invitation Quiz</a></li>
+                    <li><a href="//invitationcentre.com/e-learning/">E-learning</a></li>
+                    <li><a href="//invitationcentre.com/recent-news/">Recent News</a></li>
+                    <li><a href="//invitationcentre.com/exam-hall/?active=result">Exam Hall</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-2 col-md-2">
+                  <ul class="footer-memu">
+                    <li><h2>Useful Links</h2></li>
+                    <li><a href="//invitationcentre.com/resources/?active=resources">Resources</a></li>
+                    <li><a href="//invitationcentre.com/about/?active=about">About Us</a></li>
+                    <li><a href="//invitationcentre.com/schedule?active=schedule">Class Schedule</a></li>
+                    <li><a href="//invitationcentre.com/notice/">Notice</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-2 col-md-2">
+                  <ul class="footer-memu">
+                    <li><h2>Social</h2></li>
+                    <li><a href="//www.facebook.com/invitationcentre.help/">Invitation Centre</a></li>
+                    <li><a href="//www.facebook.com/invitation.ielts">Invitation IELTS...</a></li>
+                    <li><a href="mailto:invitation.ielts@gmail.com">Email Us</a></li>
+                    <li><a href="//invitationcentre.com/navigation">Navigation</a></li>
+                    
+                  </ul>
+              </div>
+              <div class="col-lg-2 col-md-2">
+                  <ul class="footer-memu">
+                    <li><h2>Support</h2></li>
+                    <li><a href="//invitationcentre.com/contact?active=contact">Contact us</a></li>
+                    <li><a href="https://www.facebook.com/mdashraful.me">Developer</a></li>
+                    <li><a href="//invitationcentre.com/about/?active=about">Our Team</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>All the <span> &copy; <?php echo date('Y') ?></span> copyright contained by <a href="//invitationcentre.com/">Invitation Centre</a></p>
+    </div>
 </footer>
 
 </section>

@@ -1,5 +1,25 @@
 <div id="home_sidebar">
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, eligendi minima, doloremque sint aliquid similique, numquam alias ullam atque nam culpa. Quisquam cum minus laborum exercitationem magnam sint deserunt, vero quaerat fugiat ad eos, ipsum eum nulla nisi. Atque debitis accusantium neque est repellat, natus similique, ea, nobis error deleniti consequatur autem veritatis laborum voluptatibus beatae incidunt voluptatum ducimus amet totam. Excepturi ratione quibusdam, nam corporis assumenda iure delectus consequatur laborum harum, animi similique earum sed tempora libero architecto nostrum cupiditate dolores eligendi eaque quisquam! Quisquam dicta consequuntur, modi asperiores, aut labore nostrum illo, velit aliquam debitis impedit excepturi quibusdam.
-    </p>
+    <div class="sidebar-header">
+        <a href="#">Administration</a>
+        <a href="">Developer</a>
+    </div>
+    <div class="sidebar-content">
+        <ul>
+            <li>
+                <a href="#">Admission</a>
+            </li>
+            <li>
+                <a href="#">Result</a>
+            </li>
+            <li>
+                <a href="#">Information</a>
+            </li>
+            <li>
+                <a href="#">Payment</a>
+            </li>
+            <li>
+                <a href="#">Request or Repoart</a>
+            </li>
+        </ul>
+    </div>
 </div>

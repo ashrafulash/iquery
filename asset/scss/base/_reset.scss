@@ -63,5 +63,8 @@ button{
 .cont-inner{
     max-width: 1250px;
     margin: 0 auto;
+    @include small-desktop{
+        padding: 0 25px;
+    }
 }
 

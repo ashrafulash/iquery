@@ -2,13 +2,80 @@
     width: 40vw;
     position: fixed;
     background: url('../../images/triangle-mosaic.png');
-    background-size: 100px;
+    background-size: 50px;
     top: 0;
     right: 0;
     height: 100vh;
     z-index: 11;
 
-    p{
+    .sidebar-header{
+        text-align: right;
+        padding-top: 40px;
+        padding-right: 100px;
+        @include small-desktop{
+            padding: 40px 50px;
+        }
+        a{
+            margin-left: 40px;
+            color: var(--color-black);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .sidebar-content{
         padding: 40px 100px;
+        @include small-desktop{
+            padding: 40px 50px;
+        }
+        text-align: right;
+
+        ul{
+            padding-top: 15vh;
+            @include small-desktop{
+                padding-top: 5vh; 
+            }
+
+            li{
+                a{
+                    font-family: "Poppins",sans-serif;
+                    font-size: 40px;
+                    line-height: 70px;
+                    color: var(--color-black);
+                    font-weight: 600;
+                    opacity: .6;
+                    @extend %transition;
+                    position: relative;
+
+                    @include small-desktop{
+                        font-size: 30px;
+                        line-height: 60px;
+                    }
+
+                    &:after{
+                        position: absolute;
+                        content: '';
+                        width: 0px;
+                        height: 3px;
+                        background: var(--primary);
+                        right: 0px;
+                        bottom: 20px;
+                        @extend %transition;
+
+                    }
+                    &:hover{
+                        color: var(--primary);
+                        opacity: 1;
+                        padding-right: 52px;
+                        font-style: italic;
+                    }
+
+                    &:hover:after{
+                        width: 50px;
+                    }
+                }
+            }
+        }
     }
 }

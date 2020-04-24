@@ -72,3 +72,9 @@ button{
     }
 }
 
+
+.mobile-view-none{
+    @include tablet{
+        display: none;
+    }
+}

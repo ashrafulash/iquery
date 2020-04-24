@@ -60,7 +60,7 @@
                   <P class="des">
                     Dropbox helps people be organized, stay focused, and get in sync with their teams
                     <br><br>
-                    Most “productivity” tools get in your way and constantly disrupt your flow. There’s a more enlightened way to work. Dropbox helps people be organized, stay focused, and get in sync with their teams Dropbox helps people be organized, stay focused, and get in sync with their teams.</P>
+                    Most “productivity” tools get in your way and constantly disrupt your flow. There’s a more enlightened way to work. Dropbox helps people be organized, stay focused, and get in sync with their teams Dropbox helps people be organized, stay focused.</P>
 
                   <a class="i-btn" href="//invitationcentre.com/about/?active=about">
                     <span class="btn-text"> Explore More...</span>
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-md-6">
+            <div class="col-lg-7 col-md-6 mobile-view-none">
                 <div class="ins-target-1">
                     <img class="w-100" src="asset/images/instruction-1.png" alt="instruction-1.png">
                 </div>
@@ -151,7 +151,7 @@
     <div class="cont-inner">
       <div class="content ">
           <div class="row">
-              <div class="col-lg-2 offset-lg-1 col-md-3">
+              <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6 col-6">
                   <ul class="footer-memu">
                     <li><h2>Partners</h2></li>
                     <li><a href="//invitationcentre.com/">Invitation English...</a></li>
@@ -161,7 +161,7 @@
                     <li><a href="//invitationcentre.com/">Invitation ICT Centre</a></li>
                   </ul>
               </div>
-              <div class="col-lg-2 col-md-3">
+              <div class="col-lg-2 col-md-3 col-sm-6 col-6">
                   <ul class="footer-memu">
                     <li><h2>Products</h2></li>
                     <li><a href="//sheet.invitationcentre.com/">Invitation Sheet</a></li>
@@ -171,7 +171,7 @@
                     <li><a href="//invitationcentre.com/exam-hall/?active=result">Exam Hall</a></li>
                   </ul>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-4 col-6">
                   <ul class="footer-memu">
                     <li><h2>Useful Links</h2></li>
                     <li><a href="//invitationcentre.com/resources/?active=resources">Resources</a></li>
@@ -180,7 +180,7 @@
                     <li><a href="//invitationcentre.com/notice/">Notice</a></li>
                   </ul>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-4 col-6">
                   <ul class="footer-memu">
                     <li><h2>Social</h2></li>
                     <li><a href="//www.facebook.com/invitationcentre.help/">Invitation Centre</a></li>
@@ -190,7 +190,7 @@
                     
                   </ul>
               </div>
-              <div class="col-lg-2 col-md-2">
+              <div class="col-lg-2 col-md-2 col-sm-4">
                   <ul class="footer-memu">
                     <li><h2>Support</h2></li>
                     <li><a href="//invitationcentre.com/contact?active=contact">Contact us</a></li>

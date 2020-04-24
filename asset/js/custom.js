@@ -214,7 +214,7 @@ function header_color_match(sel, scroll){
                 }
                 },
                 {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                         slidesToScroll: 1,
                         slidesToShow: 5,
@@ -224,9 +224,19 @@ function header_color_match(sel, scroll){
                 }
                 },
                 {
+                breakpoint: 575,
+                settings: {
+                        slidesToScroll: 1,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                }
+                },
+                {
                 breakpoint: 480,
                 settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 3,
                         slidesToScroll: 1
                 }
                 }

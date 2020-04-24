@@ -66,5 +66,9 @@ button{
     @include small-desktop{
         padding: 0 25px;
     }
+
+    @include mobile{
+        padding: 0 15px;
+    }
 }
 

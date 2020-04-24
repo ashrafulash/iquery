@@ -14,12 +14,15 @@
           <a class="iquery" href="index.php">IQUERY</a>
         </li>
         <li>
-            <a href="//www.invitationcentre.com" class="menu-link">Main Home</a>
+            <a href="//www.invitationcentre.com" class="menu-link">Home</a>
         </li>
         <li>
             <a href="#" class="menu-link">Navigation</a>
         </li>
       </ul>
+      <div class="nav-toggle">
+        <button class="toggle-sidebar-btn"><i class="fas fa-bars"></i></button>
+      </div>
     </div>
     </div>
 </header>

@@ -48,16 +48,22 @@ function header_color_match(sel, scroll){
         }
 }
 
-/*----------------------------------
-        home sidebar toggle
------------------------------------*/ 
+/*------------------------------------------
+        home sidebar toggle on Scroll
+--------------------------------------------*/ 
         function home_sidebar_toggle(sel, scroll){
-                var offset    = $(sel).offset().top;
-                var sidebar     = $("#home_sidebar");
-                var hero    = $(".about-hero-image");
-                var sidebar_width   = sidebar.width();
-                var tl = new TimelineLite();
-                if(scroll  > (offset - 200)){
+
+
+                var 
+                offset    = $(sel).offset().top,
+                sidebar     = $("#home_sidebar"),
+                hero    = $(".about-hero-image"),
+                sidebar_width   = sidebar.width(),
+                screen_width    = $(window).width(),
+                tl = new TimelineLite();
+
+                if(screen_width >= 991){
+                        if(scroll  > (offset - 200)){
                         tl 
                         .to(sidebar, .6 , {
                                 x: sidebar_width,
@@ -68,20 +74,53 @@ function header_color_match(sel, scroll){
                                 delay: 0,
                                 scale: .8 
                         },'-=.5')
-                }
-                else{
-                        tl 
-                        .to(sidebar, .6 , {
-                                x: 0,
-                        })
+                        }
+                        else{
+                                tl 
+                                .to(sidebar, .6 , {
+                                        x: 0,
+                                })
 
-                        .to(hero, .4 , {
-                                y: -110, 
-                                delay: 0,
-                                scale: 1  
-                        }, '-=.5')
+                                .to(hero, .4 , {
+                                        y: -110, 
+                                        delay: 0,
+                                        scale: 1  
+                                }, '-=.5')
+                        }
                 }
         }
+/*-------------------------------------------
+        home sidebar toggle on click 
+---------------------------------------------*/ 
+        (function(){
+                var 
+                sidebar = $("#home_sidebar"),
+                btn     = $('.toggle-sidebar-btn'),
+                close   = $('.sidebar-close'),
+                body    = $('body');
+
+                btn.on('click', ()=>{
+                        sidebar.css({
+                                'display': 'block',
+                        });
+
+                        body.css({
+                                'overflow' : 'hidden',
+                        })
+                });
+
+                close.on('click', ()=>{
+                        sidebar.css({
+                                'display': 'none', 
+                        })
+
+                        body.css({
+                                'overflow' : 'unset',
+                        })
+                })
+
+
+        }());
 
 /*----------------------------------
         overflow toggle
@@ -152,9 +191,9 @@ function header_color_match(sel, scroll){
                 }
         }
 
-        /*----------------------------------
-                client slick slider 
-        -----------------------------------*/ 
+/*----------------------------------
+        client slick slider 
+-----------------------------------*/ 
         $('.client-slider').slick({
         dots: false,
         infinite: true,

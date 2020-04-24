@@ -208,11 +208,14 @@
 
 </section>
 
+<!-- ==============================
+        Sidebar Start
+================================= -->
 <?php include('template/home-sidebar/home-sidebar.php'); ?>
 
-
 <!-- ==============================
-        Main Content end
+        main popup Start
 ================================= -->
+<?php include('template/main-popup.php'); ?>
 
 <?php require_once('footer.php'); ?>

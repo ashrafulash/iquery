@@ -1,0 +1,55 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(#000, .8);
+    z-index: 15;
+    display: none;
+    
+    .main-popup{
+        width: 70vw;
+        height: 90vh;
+        margin-top: 5vh;
+        margin-left: 15vw;
+        background: var(--color-white);
+        padding: 50px;
+        border-radius: 8px;
+        position: relative;
+        overflow: scroll;
+        overflow-x:hidden;
+
+        @include laptop{
+            width: 90vw;
+            margin-left: 5vw;
+            height: 95vh;
+            margin-top: 2.5vh;
+        }
+
+        @include tablet{
+            width: 100vw;
+            margin-left: 0vw;
+            height: 100vh;
+            margin-top: 0vh;
+            border-radius: 0;
+        }
+
+        #close-popup{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 0;
+            transform: translate(20%, -20%);
+            background: var(--primary-main);
+
+            &:hover{
+                color: var(--color-white);
+                background: var(--primary);
+            }
+        }
+    }
+}

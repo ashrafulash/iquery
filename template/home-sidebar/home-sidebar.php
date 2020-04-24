@@ -7,7 +7,7 @@
     <div class="sidebar-content">
         <ul>
             <li>
-                <a href="#">Admission</a>
+                <a id="admission_panel" href="#">Admission</a>
             </li>
             <li>
                 <a href="#">Result</a>
@@ -19,7 +19,7 @@
                 <a href="#">Payment</a>
             </li>
             <li>
-                <a href="#">Repoart</a>
+                <a href="#">Report</a>
             </li>
         </ul>
     </div>

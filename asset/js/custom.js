@@ -20,7 +20,58 @@ $(window).on('scroll', (e)=>{
 
 
 })
+/*----------------------------------
+        useful functions
+-----------------------------------*/ 
+function body_overflow(val){
+        if(val){
+                $('body').css({
+                        overflow : 'hidden',
+                }); 
+        }else{
+                $('body').css({
+                        overflow : 'unset'
+                });
+        }
+}
 
+function popup(val){
+        var 
+        tl      = new TimelineLite(),
+        overlay = $('.overlay');
+        if(val){
+                overlay.css({
+                        display: 'block',
+                })
+
+                tl.fromTo(overlay, .3, {
+                        scale: 1.2,
+                },{
+                        scale: 1,
+                        opacity: 1,
+                        onComplete: function(){
+                                body_overflow(true);
+                        }
+                })
+        }else{
+                tl.to(overlay, .3, {
+                        scale: .9,
+                        opacity: 0,
+                        onComplete: function(){
+                                overlay.css({
+                                        display: 'none',
+                                })
+                                body_overflow(false);
+                        }
+                }) 
+
+                
+
+        }
+}
+
+// popup close 
+$('#close-popup').click(()=> popup(false));
 
 /*----------------------------------
         header color change
@@ -245,5 +296,22 @@ function header_color_match(sel, scroll){
                 // instead of a settings object
                 ]
         });
+
+/*----------------------------------
+        admission panel
+-----------------------------------*/
+(function(){
+        var
+        admission_btn   = $('#admission_panel'),
+        popup_body      = $(".popup-body")
+
+        admission_btn.on('click', (e)=>{
+                e.preventDefault();
+                
+                popup(true);
+                popup_body.load('admission/index.php');
+        })
+}());
+
 
 });

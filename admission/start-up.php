@@ -3,7 +3,7 @@
 ?>
 <div class="adm_choose">
     <span>Choose Centre</span>
-    <input type="text" onclick="toggler('.adm_choose__option', 'open')" id="adm_selected_center" placeholder="Choose One">
+    <label onclick="toggler('.adm_choose__option', 'open')" id="adm_selected_center" placeholder="Choose One">Choose One</label>
     <ul class="adm_choose__option">
         <li><button id="adm_close_option_btn" onclick="toggler('.adm_choose__option', 'close')" ><i class="fas fa-compress-alt"></i></button></li>
         <li onclick="adm_selected_item('iecc')">Invitation English Coaching Centre</li>
@@ -21,27 +21,28 @@
         function adm_selected_item(val){
             switch(val){
                 case 'iecc':
-                    $('#adm_selected_center').val('Invitation English Coaching Centre');
+                    $('#adm_selected_center').text('Invitation English Coaching Centre');
                 break;
                 case 'ielts':
-                    $('#adm_selected_center').val('Invitation IELTS Centre');
+                    $('#adm_selected_center').text('Invitation IELTS Centre');
                 break;
                 case 'idnc':
-                    $('#adm_selected_center').val('Invitation Day & Night Care');
+                    $('#adm_selected_center').text('Invitation Day & Night Care');
                 break;
                 case 'sports':
-                    $('#adm_selected_center').val('Invitation Sports Club');
+                    $('#adm_selected_center').text('Invitation Sports Club');
                 break;
                 case 'ict':
-                    $('#adm_selected_center').val('Invitation ICT Centre');
+                    $('#adm_selected_center').text('Invitation ICT Centre');
                 break;
                 default:
-                    $('#adm_selected_center').val('Error! Can Not Select');
+                    $('#adm_selected_center').text('Error! Can Not Select');
                 break;
             }
 
+            toggler('.adm_choose__option', 'close');
+
             return false;
             
-            toggler('.adm_choose__option', 'close');
         }
 </script>

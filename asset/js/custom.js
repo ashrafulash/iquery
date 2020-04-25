@@ -70,6 +70,20 @@ function popup(val){
         }
 }
 
+function load_request(obb){
+        $(obb.target).html('<div class="adm_preloader"><img src="./asset/images/load.gif" alt="load.gif"></div>');
+        setTimeout(()=>{
+                $.post(obb.url, obb.obb, (data, status) =>{
+                        if(status == 'success'){
+                                $(obb.target).html(data);
+                        }else{
+                                $(obb.target).html('<h1>Page Not Found</h1>');
+                        }
+                }); 
+
+        }, obb.time)     
+}
+
 // popup close 
 $('#close-popup').click(()=> popup(false));
 
@@ -307,9 +321,14 @@ function header_color_match(sel, scroll){
 
         admission_btn.on('click', (e)=>{
                 e.preventDefault();
-                
+
                 popup(true);
-                popup_body.load('admission/index.php');
+                load_request({
+                        url: 'admission/index.php',
+                        time: 10,
+                        target : popup_body,
+                        obb:{request : 'ajax_request'}
+                })
         })
 }());
 

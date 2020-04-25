@@ -1,0 +1,94 @@
+.adm_choose{
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 16vh;
+        position: relative;
+
+        &__option{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--color-white);
+            width: 100%;
+            min-height: 100%;
+            display: none;
+
+            #adm_close_option_btn{
+                border: 0;
+                background: var(--primary-main);
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-bottom: 22px;
+                &:hover{
+                    background: var(--primary);
+                    color: var(--color-white);
+                }
+            }
+
+            li{
+                text-align: center;
+                font-family: $rubik;
+                line-height: 50px;
+                font-size: 18px;
+                border-bottom: 1px solid rgba(#000, .2);
+                cursor: pointer;
+                &:hover{
+                    color: var(--primary);
+                }
+                &:last-child{
+                    border-bottom: 0px solid rgba(#000, .2);
+                }
+
+                &:first-child{
+                    border-bottom: 0px solid rgba(#000, .2);
+                }
+            }
+        }
+
+        span{
+            font-size: 30px;
+            font-family: $poppins;
+            padding-bottom: 20px;
+            opacity: .5;
+        }
+
+        #adm_selected_center,
+        #adm_token{
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid var(--primary-heading);
+            margin-bottom: 32px;
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        #adm_token{
+            cursor: text;
+            margin-bottom: 0;
+        }
+        #adm_start{
+            display: block;
+            width: 100%;
+            border: 0;
+            padding: 8px 30px;
+            text-transform: uppercase;
+            background: var(--primary-main);
+            &:hover{
+                color: var(--color-white);
+                background: var(--primary);
+            }
+        }
+
+        #collect_token{
+            border: 0;
+            padding: 0;
+            background: transparent;
+            margin-bottom: 30px;
+            color: var(--primary);
+            margin-top: 5px;
+            width: 100%;
+            text-align: center;
+            text-decoration: underline;
+        }
+}

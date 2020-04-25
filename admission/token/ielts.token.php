@@ -1,3 +1,6 @@
+<?php 
+    include('../../includes/ajax.request.inc.php');
+?>
 <ul class="token_list">
     <li class="pending">
         <span class="no">01</span>

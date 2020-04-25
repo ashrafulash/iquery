@@ -54,5 +54,19 @@ function toggler(target, act){
     }  
 }
 
+/*-------------------------------------
+    Copy To clip board
+---------------------------------------*/
+function copyToClipboard(element, btn) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $(btn).text('DONE');
+    $(btn).css({
+        background: 'green',
+    })
+    $temp.remove();
+}
 
 </script>

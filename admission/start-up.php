@@ -39,6 +39,8 @@
                     $('#adm_selected_center').val('Error! Can Not Select');
                 break;
             }
+
+            return false;
             
             toggler('.adm_choose__option', 'close');
         }

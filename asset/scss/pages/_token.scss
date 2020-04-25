@@ -1,0 +1,117 @@
+.adm-token{
+    #backToStart{
+        background: var(--primary);
+        border: 0;
+        color: var(--color-white);
+        padding: 4px 40px;
+        &:hover{
+            background: var(--primary-main);
+            color: var(--primary);
+        }
+    }
+
+    .row{
+        border-top: 1px solid rgba(#000,.1);
+        padding-top: 40px;
+    }
+
+    &__header{
+        position: sticky;
+        top: 0;
+        ul{
+            li{
+                background: var(--primary);
+                color: var(--color-white);
+                padding: 11px 25px;
+                border-bottom: 1px solid var(--color-white);
+                cursor: pointer;
+
+                &:hover{
+                    background: var(--primary-main);
+                    color: var(--primary);
+                }
+            }
+            li.active{
+                background: var(--primary-main);
+                color: var(--primary);
+            }
+        }
+    }
+
+    &__body{
+        @include tablet{
+            margin-top: 50px;
+        }
+        ul{
+            li{
+                display: flex;
+                justify-content: space-between;
+                background: var(--primary-main);
+                color: var(--primary);
+                flex-wrap: wrap;
+                border-bottom: 4px solid var(--color-white);
+                @include tablet{
+                    border-bottom: 10px solid var(--color-white);
+                }
+
+                @include laptop{
+                    padding-top: 10px;
+                }
+
+                span{
+                    min-width: 20%;
+                    text-align: left;
+
+                    @include laptop{
+                        min-width: 20%;
+                    }
+                }
+
+                .no{
+                    min-width: 40px !important;
+                    padding-left: 30px;
+
+                    @include laptop{
+                        padding-left: 15px;
+                    }
+                }
+
+
+                .status{
+                    padding-right: 15px;
+                    min-width: 80px;
+                }
+
+
+                .copy{
+                    text-align: right;
+                    min-width: 100px;
+                    @include laptop{
+                        min-width: 100%;
+                        padding-top: 10px;
+                    }
+                    button{
+                        border: 0;
+                        background: var(--primary);
+                        color: var(--color-white);
+                        padding: 0 30px;
+                        @include laptop{
+                            width: 100%;
+                        }
+
+                        &:hover{
+                            color: var(--color-white);
+                            background: var(--color-black);
+                        }
+                    }
+                }
+            }
+
+            li.pending{
+                    filter: grayscale(1);
+                    pointer-events: none;
+                    cursor: not-allowed;
+            }
+        }
+    }
+}

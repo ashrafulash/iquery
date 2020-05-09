@@ -5,7 +5,6 @@ class Dbh{
     // private $pwd    = 'tr{]zO&@MQ~S';
     // private $dbName = 'themxygf_iquery';
 
-
     private $host   = 'localhost';
     private $user   = 'root';
     private $pwd    = '';

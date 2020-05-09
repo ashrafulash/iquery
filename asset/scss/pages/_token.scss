@@ -85,50 +85,33 @@
                     border-bottom: 10px solid var(--color-white);
                 }
 
-                @include laptop{
-                    padding-top: 10px;
-                }
-
                 span{
-                    min-width: 20%;
+                    min-width: 40px;
                     text-align: left;
-
-                    @include laptop{
-                        min-width: 20%;
-                    }
                 }
 
                 .no{
-                    min-width: 40px !important;
-                    padding-left: 30px;
-
-                    @include laptop{
-                        padding-left: 15px;
-                    }
+                    text-align: center;
                 }
 
 
-                .status{
-                    padding-right: 15px;
-                    min-width: 80px;
-                }
+                // .status{
+                //     padding-right: 15px;
+                //     min-width: 80px;
+                // }
 
 
                 .copy{
                     text-align: right;
                     min-width: 100px;
-                    @include laptop{
-                        min-width: 100%;
-                        padding-top: 10px;
-                    }
                     button{
                         border: 0;
                         background: var(--primary);
                         color: var(--color-white);
                         padding: 0 30px;
-                        @include laptop{
-                            width: 100%;
-                        }
+                        // @include laptop{
+                        //     width: 100%;
+                        // }
 
                         &:hover{
                             color: var(--color-white);

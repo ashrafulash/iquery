@@ -131,7 +131,8 @@ if(isset($_POST['token'])) :
                     </span>
                     <!-- Gender  -->
                     <span>
-                        <input id="iecc_birth" type="date">
+                        <label class="v_label" for="iecc_birth">Birthday</label>
+                        <input id="iecc_birth" type="date" placeholder="pick Date">
                     </span>
                 </form>
                 <div class="image_upload">

@@ -53,13 +53,17 @@
             }
             .v_label{
                 padding-right: 10px;
-                min-width: 88px;
+                min-width: 100px;
+                @include mobile{
+                    min-width: 120px;
+                }
             }
             input{
                 width: 100%;
                 border: 1px solid #e1e2e6;
                 padding: 5px 15px;
                 color: #4d5586;
+                min-height: 50px;
                 &:focus{
                     border-color: var(--primary);
                 }
@@ -84,6 +88,11 @@
                 background: var(--primary-main);
                 color: var(--primary);
             }
+
+            @include mobile{
+                width: 100%;
+            }
+
         }
 
         #errMsg_2{
@@ -103,6 +112,12 @@
                 line-height: 40px;
                 margin-left: 10px;
                 border-radius: 50%;
+            }
+
+            @include mobile{
+                width: 100%;
+                text-align: center;
+                margin-bottom: 18px;
             }
         }
     }

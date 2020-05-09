@@ -71,12 +71,12 @@
   <div class="card">
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
         Who can get admitted into IECC? 
         </button>
       </h2>
     </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+    <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
       Students of JSC, SSC, HSC, Honors and Degree can apply here.   </div>
     </div>
@@ -84,12 +84,12 @@
   <div class="card">
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
           How many subjects does IECC teach?
         </button>
       </h2>
     </div>
-    <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iure.
       </div>
@@ -98,12 +98,12 @@
   <div class="card">
     <div class="card-header" id="headingThree">
       <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
           What is the initial admission cost?
         </button>
       </h2>
     </div>
-    <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+    <div id="collapseEight" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
       A student has pay only 230tk. for admission and 1000tk. in advance for the month he is going to get admitted that means a student has to pay only 1000tk. for each month. 
       </div>

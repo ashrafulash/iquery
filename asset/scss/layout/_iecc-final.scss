@@ -1,0 +1,136 @@
+.iecc_final{
+    padding-top: 100px;
+
+    @include mobile{
+        padding-top: 70px;
+    }
+    &__profile{
+        background: #EDF3F6;;
+        padding: 0 50px 50px 50px;
+        border-radius: 10px;
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+
+        @include laptop{
+            padding: 0 30px 50px 30px;
+        }
+
+        @include mobile{
+            padding: 0 15px 30px 15px;
+        }
+        
+        img{
+            border-radius: 50%;
+            max-width: 150px;
+            border: 3px solid #fff;
+            box-shadow: 0 10px 30px rgba(#000, .2);
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        ul{
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @include tablet{
+                grid-template-columns: 1fr;
+            }
+            
+            li{
+                border-bottom: 1px solid rgba(gray, .2);
+                line-height: 50px;
+                span{
+                    font-family: 'Poppins',sans-serif;
+                    font-size: 20px;
+                    @include tablet{
+                        font-size: 18px;
+                    }
+                    @include mobile{
+                        font-size: 16px;
+                    }
+                }
+                .tit{
+                    color: #727272;
+                }
+                .dta{
+                    color: #0e3081;
+                    font-weight: 700;
+                    padding-left: 5px;
+                }
+            }
+        }
+        
+        .note{
+            color: #fe2422;
+            font-weight: 400;
+            font-family: 'Arial',sans-serif;
+            font-style: italic;
+            font-size: 18px;
+            background: rgba(#fe2422, .1);
+
+            @include mobile{
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+    
+    &__payment{
+        max-width: 900px;
+        margin: 0 auto;
+
+
+        #bkash_logo{
+            max-width: 280px;
+            margin-top: 80px;
+            margin-bottom: 15px;
+            
+        }
+        
+        #trx_iecc{
+            border: 1px solid #E3106E;
+            padding: 5px 40px;
+            margin-top: 40px;
+            border-radius: 28px;
+            box-shadow: 0 15px 30px rgba(#E3106E, .1);
+            background: rgba(#E3106E, .1);
+            margin-bottom: 40px;
+            display: block;
+            min-width: 270px;
+            &:focus{
+                background: #ffff;
+                box-shadow: none;
+            }
+            
+        }
+        
+        .iecc_error{
+            background: rgba(red, .05);
+            color: red;
+            padding:0 15px;
+        }
+        
+        
+        #iecc_submit_form{
+            background: #0E3081;
+            color: #fff;
+            border: 0;
+            padding: 10px 30px;
+            margin-bottom: 40px;
+            width: 250px;
+            margin-top: 20px;
+            box-shadow: 0 15px 30px rgba(#0E3081, .20);
+            
+            &:hover{
+                background: #6371BA;
+            }
+        }
+
+    }
+
+    
+
+}

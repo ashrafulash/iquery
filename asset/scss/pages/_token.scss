@@ -45,6 +45,34 @@
         .adm_preloader{
             padding-top: 100px;
         }
+
+        .sit_title{
+            @extend %title;
+                text-transform: capitalize;
+                font-weight: 700;
+                margin-bottom: 15px;
+                color: var(--primary);
+        }
+        .sit_des{
+            @extend %paragraph;
+            color: #444;
+            padding-bottom: 13px;
+            max-width: 600px;
+
+        }
+
+        .sit_call{
+            background: var(--primary);
+            color: var(--primary-main);
+            width: 121px;
+            text-align: center;
+            padding: 4px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin-top: 19px;
+
+        }
+
         ul{
             li{
                 display: flex;

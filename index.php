@@ -37,7 +37,7 @@
             Online Query Makes your life easy.
           </h1>
           <p class="des">
-            Dropbox is the world’s first smart workspace. We bring all your team’s content together while letting you use the tools you love. And we help cut through the clutter, surfacing what matters most. orld’s first smart workspace. We bring all your team’s content together while letting you use
+            We,the Invitatation Centre,are ready for your convenience. Your information,  result,admission process and payment facility are available here.You can get admitted following our instructions .In addition to, you can search your result and you can pay your payment.
           </p>
           <span class="moving-icon">
             <img class="arrow-1" src="asset/images/svg/arrow-1.svg" alt="iquery">
@@ -56,11 +56,13 @@
           </div>
           <div class="col-lg-5 col-md-5 d-flex align-items-center">
               <div class="content">
-                  <h2 class="title">Say goodbye to busywork</h2>
+                  <h2 class="title">Our Mission & Vission</h2>
                   <P class="des">
-                    Dropbox helps people be organized, stay focused, and get in sync with their teams
-                    <br><br>
-                    Most “productivity” tools get in your way and constantly disrupt your flow. There’s a more enlightened way to work. Dropbox helps people be organized, stay focused, and get in sync with their teams Dropbox helps people be organized, stay focused.</P>
+                    We, Invitation Centre ,are working in development of education of Bangladesh. We basically are woking with English language . we are providing the modern facilities to the students.
+                    <br>
+                    
+                    With progress of the world we are updating our system . We believe in change ,and so we take potential initiative to adapt with the modern world . We hope withing 2025 ,we will have a school, a library ,a restaurant and Avoron (Online shop) etc. We have a plan to start a tour business and so  we will take necessary step when we feel to start.                    
+                    </P>
 
                   <a class="i-btn" href="//invitationcentre.com/about/?active=about">
                     <span class="btn-text"> Explore More...</span>

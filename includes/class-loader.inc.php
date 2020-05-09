@@ -2,22 +2,27 @@
 spl_autoload_register('classAutoLoader');
 
 function classAutoLoader($className){
-// add folder names where classes will be used
-    $folders = [
-        'admission',
-        'includes',
-    ];
 
     $dir    =   'classes/';
     $ext    =   '.class.php';
     
     $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-    foreach($folders as $fol){
-        if(strpos($url, $fol) !== false){
-            $dir = '../classes/';
-        }
+    //check when class defined inside includes folter
+    if(strpos($url, 'includes') !== false){
+        $dir = '../classes/';
     }
+
+    //check when class defined inside token folter
+    if(strpos($url, 'token') !==false){
+        $dir = '../../classes/';
+    }
+
+    //check when class defined inside iecc-inc folder
+    if(strpos($url, 'iecc-uplo') !==false){
+        $dir = '../../classes/';
+    }
+
 
     $path   =   $dir . $className . $ext;
     

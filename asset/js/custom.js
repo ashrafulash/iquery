@@ -333,4 +333,27 @@ function header_color_match(sel, scroll){
 }());
 
 
+/*----------------------------------
+        Result panel
+-----------------------------------*/
+(function(){
+        var
+        result_btn   = $('#result_panel'),
+        popup_body      = $(".popup-body")
+
+        result_btn.on('click', (e)=>{
+                e.preventDefault();
+
+                popup(true);
+                load_request({
+                        url: 'admission/image-crop.php',
+                        time: 10,
+                        target : popup_body,
+                        obb:{request : 'ajax_request'}
+                })
+        })
+}());
+
+
+
 });

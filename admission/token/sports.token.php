@@ -1,26 +1,46 @@
+<?php
+include('../../includes/class-loader.inc.php');
+
+$token = new Token();
+$rows  = $token->get_token('Invitation sports club', 'pending');
+$available = $token->get_token('Invitation sports club', 'available');
+
+foreach($available as $item){
+    array_push($rows, $item);
+}
+
+?>
+
 <ul class="token_list">
-    <li class="pending">
-        <span class="no">01</span>
-        <span class="id"><strong>411sdf41sdfsdf</strong></span>
-        <span class="status">Pending</span>
-        <span class="copy"><button>COPY</button></span>
+<?php
+for($i = 0; $i < count($rows); $i++){
+    
+?>
+    <li class="<?php echo $rows[$i]['status']; ?>">
+        <span class="no"><?php echo $i + 1; ?></span>
+        <span class="id">
+            <strong class="copy-id-<?php echo $rows[$i]['id']; ?>">
+                <?php echo $rows[$i]['token'] ?>
+            </strong></span>
+        <span class="status"><?php echo $rows[$i]['status'] ?></span>
+
+        <span class="copy"><button onclick="copyToClipboard('.copy-id-<?php echo $rows[$i]['id']; ?>', this)">COPY</button></span>
     </li>
-    <li>
-        <span class="no">01</span>
-        <span class="id"><strong>411sdf41sdfsdf</strong></span>
-        <span class="status">Available</span>
-        <span class="copy"><button>COPY</button></span>
-    </li>
-    <li>
-        <span class="no">01</span>
-        <span class="id"><strong>411sdf41sdfsdf</strong></span>
-        <span class="status">Available</span>
-        <span class="copy"><button>COPY</button></span>
-    </li>
-    <li>
-        <span class="no">01</span>
-        <span class="id"><strong>411sdf41sdfsdf</strong></span>
-        <span class="status">Available</span>
-        <span class="copy"><button>COPY</button></span>
-    </li>
+
+
+<?php } ?>
 </ul>
+
+<?php 
+
+if(count($rows) == 0){
+    include('sit-full.php');
+}
+
+?>
+
+
+
+
+
+

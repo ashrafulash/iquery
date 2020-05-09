@@ -1,8 +1,18 @@
 .adm_choose{
         width: 300px;
         margin: 0 auto;
-        margin-top: 16vh;
+        margin-top: 20vh;
         position: relative;
+
+        #adm_choose_message{
+            background: rgba(255,0,0,0.1);
+            color: red;
+            display: block;
+            text-align: center;
+            position: absolute;
+            transform: translateY(-55px);
+            width: 100%;
+        }
 
         &__option{
             position: absolute;

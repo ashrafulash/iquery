@@ -9,10 +9,10 @@
     display: none;
     
     .main-popup{
-        width: 70vw;
+        width: 80vw;
         height: 90vh;
         margin-top: 5vh;
-        margin-left: 15vw;
+        margin-left: 10vw;
         background: var(--color-white);
         border-radius: 8px;
         position: relative;
@@ -20,7 +20,7 @@
         
         .header{
             position: relative;
-            z-index: 20;
+            z-index: 9999;
         }
 
         .popup-body{
@@ -46,7 +46,7 @@
             }
         }
         @include small_desktop{
-            width: 80vw;
+            width: 90vw;
             margin-left: 10vw;
         }
 

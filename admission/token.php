@@ -29,7 +29,9 @@
         <div class="col-lg-7 col-md-6 col-sm-12">
             
             <div class="adm-token__body">
-                <?php include ('token/iecc.token.php'); ?>
+                <script>
+                    pageRequest('admission/token/iecc.token.php', 10, '.adm-token__body');
+                </script>
             </div>
         </div>
     </div>
@@ -51,6 +53,9 @@
         })
 
     })
+
+
+    
 
 </script>
 

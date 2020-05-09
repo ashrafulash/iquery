@@ -10,7 +10,7 @@
                 <a id="admission_panel" href="#">Admission</a>
             </li>
             <li>
-                <a href="#">Result</a>
+                <a id="result_panel" href="#">Result</a>
             </li>
             <li>
                 <a href="#">Information</a>

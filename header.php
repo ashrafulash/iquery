@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="asset/src/min-css/all.min.css">
     <link rel="stylesheet" href="asset/src/min-css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/src/min-css/slick.css">
+    <!-- 
+        *FineCrop.css and layout.css is for Image Crop Plugin
+    -->
+    <link rel="stylesheet" href="asset/src/min-css/fineCrop.css">
+    <link rel="stylesheet" href="asset/src/min-css/layout.css">
+    <!-- ----------------- -->
     <link rel="stylesheet" href="asset/src/min-css/master.css">  
     
     <script src="asset/js/jquery-1.12.4.min.js"></script>

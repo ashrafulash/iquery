@@ -8,7 +8,9 @@
     <script src="asset/src/gsap/EasePack.min.js"></script>
     <script src="asset/src/gsap/TimelineLite.min.js"></script>
     <script src="asset/src/gsap/custom-animate.js"></script>
-    <!-- gsap for animation end -->
+    <!-- FineCrop js start -->
+    <script src="asset/js/fineCrop.js"></script>
+    <!-- custom js start -->
     <script src="asset/js/custom.js"></script>
 </body>
 </html>

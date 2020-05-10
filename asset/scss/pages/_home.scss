@@ -20,6 +20,9 @@
         width: 100%;
         min-height: 100px;
         z-index: 10;
+        @include mobile{
+            min-height: 60px;
+        }
         .menu{
             ul{
                 display: flex;
@@ -30,6 +33,7 @@
                 }
                 @include mobile{
                     padding: 0 15px;
+                    height: 60px;
                 }
 
                 li{
@@ -101,7 +105,7 @@
             }
             @include mobile{
                 right: 26px;
-                top: 34px;
+                top: 15px;
             }
         }
         

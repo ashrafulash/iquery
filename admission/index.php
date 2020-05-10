@@ -10,7 +10,7 @@
 $(document).ready(function(){
     
     var
-    adm_content     = $('.adm_content');
+    adm_content = $('.adm_content');
 
     load_request({
         url: 'admission/start-up.php',

@@ -1,0 +1,64 @@
+.thanks{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    
+    &__icon{
+        background: #6CB15E;
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        line-height: 105px;
+        font-size: 40px;
+        border-radius: 50%;
+    }
+    
+    &__title{
+        color: #2C323C;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 700;
+        letter-spacing: -1px;
+        font-size: 64px;
+        padding-top: 20px;
+
+        @include mobile{
+            font-size: 40px;
+        }
+    }
+    
+    &__des{
+        color: #77797D;
+        font-size: 22px;
+        font-family: 'Rubik',sans-serif;
+        line-height: 28px;
+        padding-bottom: 30px;
+        @include mobile{
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    
+    &__founder{
+        color: #2C323C;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 800;
+    }
+    
+    &__degree,
+    &__uni{
+        color: #77797D;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: 'Rubik',sans-serif;
+        line-height: 28px;
+    }
+    
+    &__uni{
+        margin-top: -10px;
+        color: #2C323C;
+        text-decoration: underline;
+    }
+    
+    
+}

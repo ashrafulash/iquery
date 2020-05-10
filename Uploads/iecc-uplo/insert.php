@@ -34,8 +34,7 @@ if($cls->find_token('all', 'all', $token) == 'true'){
                     //check if the student already exists
                         $student = new Student();
                         if($student->find_student($token) == 'true'){
-                            echo 'This ID is Belongs to ' . $student->one($token)[0]['firstName'] . ' ' .$student->one($token)[0]['middleName'] . ' ' . $student->one($token)[0]['lastName'];
-                            
+                            echo 'This ID is Belongs to ' . $student->one($token)[0]['firstName'] . ' ' .$student->one($token)[0]['middleName'] . ' ' . $student->one($token)[0]['lastName'];   
                         }else{
                             //fine to insert information
                             // create Image File
@@ -69,8 +68,7 @@ if($cls->find_token('all', 'all', $token) == 'true'){
                                 'presentThana'  =>   $_POST['presentThana'],
                                 'presentPostCode'  =>   $_POST['presentPostCode'],
                                 'presentCountry'  =>   $_POST['presentCountry'],
-                                
-                                
+
                                 'permanentAddress'  =>   $_POST['permanentAddress'],
                                 'nationility'  =>   $_POST['nationility'],
                                 'personalNumber'  =>   $_POST['personalNumber'],
@@ -79,8 +77,7 @@ if($cls->find_token('all', 'all', $token) == 'true'){
                                 'emailAddress'  =>   $_POST['emailAddress'],
                                 'facebookUsername'  =>   $_POST['facebookUsername'],
                                 'skypeId'  =>   $_POST['skypeId'],
-                                
-                                
+
                                 'class'  =>   $_POST['class'],
                                 'group'  =>   $_POST['group'],
                                 'blood'  =>   $_POST['blood'],
@@ -104,8 +101,14 @@ if($cls->find_token('all', 'all', $token) == 'true'){
 
                                 //UPDATE token status in token table
                                 $cont->status_update('token_tb', 'token', $token, 'pending');
-
-                                echo 'successful';
+                                //redirect to thank you page after successful form submission
+                                ?>
+                                    <script>
+                                        let obb = {sel: null}
+                                        validateRequest('admission/thanks.php', '.adm_content', obb);
+                                    </script>
+                                <?php
+                                
                         }
 
                 }

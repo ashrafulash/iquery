@@ -59,6 +59,7 @@ class Model extends Dbh{
         $sql = 'DELETE FROM '.$table.' WHERE '.$field.' = ?';
         $stmt  = $this->connect()->prepare($sql);
         $stmt->execute([$value]);
+
     }
 
 

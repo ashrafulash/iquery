@@ -7,11 +7,18 @@ class Model extends Dbh{
         $stmt   = $this->connect()->query($sql);
         return $stmt->fetchAll();
     }
-
+    //fetch one row
     protected function get_one_row($table, $field, $target){
         $sql    = 'SELECT * FROM ' . $table . ' WHERE ' . $field . ' = ?';
         $stmt   = $this->connect()->prepare($sql);
         $stmt->execute([$target]);
+        return $stmt->fetchAll();
+    }
+
+    //search from student table
+    protected function search($table, $col, $input){
+        $sql    = 'SELECT * FROM '. $table .' WHERE '. $col .' like '. $input;
+        $stmt   = $this->connect()->query($sql);
         return $stmt->fetchAll();
     }
 
@@ -46,6 +53,14 @@ class Model extends Dbh{
         $stmt   = $this->connect()->prepare($sql);
         $stmt->execute([$arr['centre'], $arr['student_id'], $arr['firstName'], $arr['middleName'], $arr['lastName'], $arr['fatherFirstName'], $arr['fatherMiddleName'], $arr['fatherLastName'], $arr['motherFirstName'], $arr['motherMiddleName'], $arr['motherLastName'], $arr['institution'], $arr['presentHouse'], $arr['presentCity'], $arr['presentThana'], $arr['presentPostCode'], $arr['presentCountry'], $arr['permanentAddress'], $arr['nationility'],$arr['personalNumber'],$arr['fatherNumber'],$arr['motherNumber'],$arr['emailAddress'],$arr['facebookUsername'],$arr['skypeId'],$arr['class'],$arr['group'], $arr['blood'],$arr['religion'],$arr['gender'],$arr['birth'], $arr['date'], $arr['status']]);
     }
+
+    //delte row
+    protected function delete_row($table,$field,$value){
+        $sql = 'DELETE FROM '.$table.' WHERE '.$field.' = ?';
+        $stmt  = $this->connect()->prepare($sql);
+        $stmt->execute([$value]);
+    }
+
 
 
 

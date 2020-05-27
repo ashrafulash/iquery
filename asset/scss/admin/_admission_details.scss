@@ -1,0 +1,64 @@
+#online_application{
+    width: 100%;
+    background: #fff;
+    padding: 50px 50px;
+    font-family: 'Poppins',sans-serif;
+
+    tr > td {
+        vertical-align: top;
+    }
+
+    tr >td > table{
+        width: 100%;
+    }
+
+    .online_application{
+        font-size: 60px;
+        font-weight: 400;
+    }
+
+    .date{
+        font-size: 18px;
+        padding-bottom: 26px;
+        display: inline-block;
+    }
+
+    .centre{
+        text-transform: uppercase;
+        margin-top: 28px;
+        font-size: 40px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            right: 0;
+            bottom: -29px;
+            width: 50%;
+            height: 5px;
+            background:gray;
+        }
+    }
+
+
+    .content{
+        vertical-align: top;
+        background: #eee;
+        padding: 30px 50px;
+
+        td{
+            font-size: 20px;
+            line-height: 50px;
+            strong{
+                min-width: 250px;
+                display: inline-block;
+                font-weight: 500;
+            }
+
+            span{
+                background: #fff;
+                padding: 0 41px;
+            }
+        }
+    }
+
+}

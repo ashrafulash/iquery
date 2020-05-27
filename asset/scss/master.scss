@@ -13,6 +13,7 @@
 @import 'pages/token';
 @import 'pages/start-up';
 @import 'pages/thanks';
+@import 'pages/login';
 
 //layout
 @import 'layout/welcome';
@@ -25,3 +26,7 @@
 
 //component
 @import 'component/ripple-btn';
+
+//admin
+@import 'admin/home';
+@import 'admin/admission_details';

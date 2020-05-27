@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>iQuery</title>
+    <link rel="icon" href="./asset/images/fav.png" type="image/gif" sizes="20x20">
     <link rel="stylesheet" href="asset/src/min-css/all.min.css">
     <link rel="stylesheet" href="asset/src/min-css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/src/min-css/slick.css">

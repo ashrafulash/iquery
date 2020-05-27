@@ -354,6 +354,24 @@ function header_color_match(sel, scroll){
         })
 }());
 
+/*----------------------------------
+        Administration Panel
+-----------------------------------*/
+(function(){
+        var
+        result_btn   = $('#login_administration'),
+        popup_body      = $(".popup-body")
+        result_btn.on('click', (e)=>{
+                e.preventDefault();
+                popup(true);
+                load_request({
+                        url: 'login.php',
+                        time: 10,
+                        target : popup_body,
+                        obb:{request : 'ajax_request'}
+                })
+        })
+}());
 
 
 });

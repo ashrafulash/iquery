@@ -14,7 +14,11 @@ class Controller extends Model{
     //update status
     public function status_update($table, $field,$id , $status){
         $this->update_status($table, $field,$id , $status);
-        
+    }
+
+    // delete row
+    public function delete($table,$field,$value){
+        $this->delete_row($table,$field,$value);
     }
 
 }

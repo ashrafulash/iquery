@@ -18,12 +18,15 @@ class Student extends View{
     return $arr;
 }
 
-    //show one student
+//show one student
     public function one($id){
         return $this->one_row('student_tb', 'student_id', $id);
     }
 
-
+//search
+public function searchData($col,$input){
+    return $this->search('student_tb',$col,$input);
+}
 
 
  //find students

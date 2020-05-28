@@ -59,7 +59,7 @@ class Model extends Dbh{
         $sql  = 'INSERT INTO token_tb (token, center, status, date) VALUES (?, ? , ?, ?)';
         $stmt   = $this->connect()->prepare($sql);
         $date = date("j-m-Y");
-        $stmt->execute([$token, $centre,'pending',$date]);
+        $stmt->execute([$token, $centre,'available',$date]);
     }
 
     //delte row

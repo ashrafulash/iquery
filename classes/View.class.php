@@ -35,6 +35,17 @@ class View extends Model{
         return $this->get_one_row($table, $field, $target);
     }
 
+    //show based data
+    public function show_based($table, $field, $value){
+        return  $this->get_data_with($table, $field, $value);
+    }
+
+
+    //show any table all data
+    public function showAllData($table){
+        return $this->get_data($table);
+    }
+
 
 
 

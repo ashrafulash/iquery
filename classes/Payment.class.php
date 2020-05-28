@@ -2,6 +2,7 @@
 
 class Payment extends View{
 
+
       //show trxID
         public function get_trx($target_trx, $centre){
             $arr    = array(); 

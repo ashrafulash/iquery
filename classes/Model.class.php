@@ -40,16 +40,15 @@ class Model extends Dbh{
 
     //insert payment table
     protected function insert_payment($arr){  
-        $sql = "INSERT INTO payment(student_id, trx_id, purpose, date, status, centre) VALUES (? , ? , ? , ? , ? , ?)";
+        $sql = "INSERT INTO payment(student_id, trx_id, purpose, amount, date, status, centre, month) VALUES (? , ? , ? , ? , ? , ?, ?, ?)";
         $stmt = $this->connect()->prepare($sql);
-        $stmt->execute([$arr['student_id'], $arr['trx_id'], $arr['purpose'], $arr['date'], $arr['status'], $arr['centre']]); 
+        $stmt->execute([$arr['student_id'], $arr['trx_id'], $arr['purpose'], 'null', $arr['date'], $arr['status'], $arr['centre'], 'null']); 
     }
 
 
     //insert to student Table
     protected function insert_student($arr){
         $sql  = 'INSERT INTO student_tb(centre, student_id, firstName, middleName, lastName, fatherFirstName, fatherMiddleName, fatherLastName,motherFirstName, motherMiddleName, motherLastName,  institution, presentHouse, presentCity, presentThana, presentPostCode, presentCountry, permanentAddress, nationility, personalNumber, fatherNumber, motherNumber, emailAddress, facebookUsername, skypeId, class, sgroup, blood, religion, gender, birth, date, status) VALUES (?, ?, ?, ?, ? ,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? , ?)';
-
         $stmt   = $this->connect()->prepare($sql);
         $stmt->execute([$arr['centre'], $arr['student_id'], $arr['firstName'], $arr['middleName'], $arr['lastName'], $arr['fatherFirstName'], $arr['fatherMiddleName'], $arr['fatherLastName'], $arr['motherFirstName'], $arr['motherMiddleName'], $arr['motherLastName'], $arr['institution'], $arr['presentHouse'], $arr['presentCity'], $arr['presentThana'], $arr['presentPostCode'], $arr['presentCountry'], $arr['permanentAddress'], $arr['nationility'],$arr['personalNumber'],$arr['fatherNumber'],$arr['motherNumber'],$arr['emailAddress'],$arr['facebookUsername'],$arr['skypeId'],$arr['class'],$arr['group'], $arr['blood'],$arr['religion'],$arr['gender'],$arr['birth'], $arr['date'], $arr['status']]);
     }

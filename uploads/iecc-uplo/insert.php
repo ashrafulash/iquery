@@ -25,7 +25,13 @@ if($cls->find_token('all', 'all', $token) == 'true'){
                     $row = $pay->get_trx($trx, 'all');
                     $sr = $row[0]['student_id'];
                     $oneStu = new Student();
-                    echo 'This TrxID used by ' . $oneStu->one($sr)[0]['firstName'] . ' ' .$oneStu->one($sr)[0]['middleName'] . ' ' . $oneStu->one($sr)[0]['lastName'];
+                    if($oneStu->one($sr)){
+                        echo 'This TrxID used by ' . $oneStu->one($sr)[0]['firstName'] . ' ' .$oneStu->one($sr)[0]['middleName'] . ' ' . $oneStu->one($sr)[0]['lastName'];
+                    }
+                    else{
+                        echo 'This TrxID used';
+                    }
+                    
 
                 }
                 //trx is fine to use
@@ -96,7 +102,7 @@ if($cls->find_token('all', 'all', $token) == 'true'){
                                     'date'      =>  $date,
                                     'status'    =>  $status,
                                     'trx_id'  =>   $_POST['trx'],
-                                    'purpose' => 'Admission and Monthly Fee',
+                                    'purpose' => 'admission with monthly fee',
                                 ));
 
                                 //UPDATE token status in token table

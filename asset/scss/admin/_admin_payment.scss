@@ -1,4 +1,4 @@
-.admin_token{
+.admin_payment{
     .header{
         h1{
             padding-bottom: 20px;
@@ -24,7 +24,7 @@
 
     }
 
-    .admin_token_body{
+    .admin_payment_body{
         table{
             background: #fff;
             width: 100%;
@@ -34,7 +34,7 @@
                 padding:10px 30px;
 
                 a{
-                    background: red;
+                    background: green;
                     color: #fff;
                     padding: 0 23px;
                 }
@@ -43,6 +43,7 @@
             th{
                 background: #3A56F9;
                 color: #fff;
+                font-weight: 400;
             }
 
             td{
@@ -50,22 +51,4 @@
             }
         }
     }
-}
-
-
-.errorToken{
-    color: red;
-    font-size: 16px;
-    background: rgba(255,0,0,0.2);
-    display: inline-block;
-    padding: 0 61px;
-    margin-bottom: 17px;
-}
-.successToken{
-    color: green;
-    font-size: 16px;
-    background: rgba(green,0.2);
-    display: inline-block;
-    padding: 0 61px;
-    margin-bottom: 17px;
 }

@@ -9,9 +9,9 @@ if(isset($_SESSION['uid'])):
         <ul class="admin__sidebar__nav">
             <li><a class="mitem_admission" href="main.php">Admission</a></li>
             <li><a class="mitem_token" href="token.php">Token</a></li>
-            <li><a class="mitem_email" href="#">Email</a></li>
+            <li><a class="mitem_email" href="email.php">Send Email/SMS</a></li>
             <li><a class="mitem_update" href="#">Update</a></li>
-            <li><a class="mitem_payments" href="#">Payments</a></li>
+            <li><a class="mitem_payments" href="payments.php">Payments</a></li>
             <li><a class="mitm" href="#">Batches</a></li>
             <li><a class="mitm" href="#">Payments</a></li>
             <li><a class="mitm" href="#">Payments</a></li>

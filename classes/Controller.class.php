@@ -21,4 +21,9 @@ class Controller extends Model{
         $this->delete_row($table,$field,$value);
     }
 
+    //insert token table
+    public function insert_token_id($token, $centre){
+        $this->insert_token($token, $centre);
+    }
+
 }

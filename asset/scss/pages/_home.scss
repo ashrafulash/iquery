@@ -128,8 +128,12 @@
             }
 
             @include large-tablet{
-                padding: 80px 0 50px 0;
+                padding: 55px 0 50px 0;
                 max-width: 670px;
+            }
+
+            @include mobile{
+                padding: 10px 0 50px 0;
             }
 
                 .sub{

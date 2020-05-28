@@ -25,7 +25,7 @@ function videApplication(inp){
 
 function update_status(act, id){
     $prompt = prompt('Enter CONFIRM to continue:');
-    if($prompt = 'confirm'){
+    if($prompt == 'confirm'){
         $.post('update_status.php', {act: act, id: id}, (data, status) =>{
             if(status == 'success'){
 
@@ -36,6 +36,11 @@ function update_status(act, id){
                         $('.admin__content').html('<h1>Not Found</h1>');
                     }
                 }); 
+
+                if(act == 'delete'){
+                    window.location.href = 'main.php';
+                    console.log('hello') 
+                }
 
                 notification(true, 'Successful');
             }else{

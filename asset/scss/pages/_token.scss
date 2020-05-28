@@ -42,6 +42,10 @@
         @include tablet{
             margin-top: 50px;
         }
+
+        .token_list{
+            padding-bottom: 40px;
+        }
         .adm_preloader{
             padding-top: 100px;
         }
@@ -70,6 +74,7 @@
             text-transform: uppercase;
             border-radius: 5px;
             margin-top: 19px;
+            margin-bottom: 40px;
 
         }
 

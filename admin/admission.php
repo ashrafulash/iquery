@@ -48,3 +48,8 @@ if(isset($_SESSION['uid'])):
         </div>
 
         <?php else: echo 'page not found'; endif; ?>
+
+
+<script>
+    $('.mitem_admission').addClass('active');
+</script>

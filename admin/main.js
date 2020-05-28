@@ -1,5 +1,3 @@
-
-
 function notification (bool, msg){
     if(bool){
         var adm  = $('.admin__content');
@@ -26,3 +24,12 @@ function notification (bool, msg){
 
     }
 }
+
+
+// change active class on slidebar
+var mitm = $('.mitm');
+mitm.click(item =>{
+    mitm.map((i,menu)=>{
+        $(menu).removeClass('active');
+    })
+})

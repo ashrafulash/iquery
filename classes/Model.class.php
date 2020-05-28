@@ -54,6 +54,14 @@ class Model extends Dbh{
         $stmt->execute([$arr['centre'], $arr['student_id'], $arr['firstName'], $arr['middleName'], $arr['lastName'], $arr['fatherFirstName'], $arr['fatherMiddleName'], $arr['fatherLastName'], $arr['motherFirstName'], $arr['motherMiddleName'], $arr['motherLastName'], $arr['institution'], $arr['presentHouse'], $arr['presentCity'], $arr['presentThana'], $arr['presentPostCode'], $arr['presentCountry'], $arr['permanentAddress'], $arr['nationility'],$arr['personalNumber'],$arr['fatherNumber'],$arr['motherNumber'],$arr['emailAddress'],$arr['facebookUsername'],$arr['skypeId'],$arr['class'],$arr['group'], $arr['blood'],$arr['religion'],$arr['gender'],$arr['birth'], $arr['date'], $arr['status']]);
     }
 
+    //insert to token Table
+    protected function insert_token($token, $centre){
+        $sql  = 'INSERT INTO token_tb (token, center, status, date) VALUES (?, ? , ?, ?)';
+        $stmt   = $this->connect()->prepare($sql);
+        $date = date("j-m-Y");
+        $stmt->execute([$token, $centre,'pending',$date]);
+    }
+
     //delte row
     protected function delete_row($table,$field,$value){
         $sql = 'DELETE FROM '.$table.' WHERE '.$field.' = ?';

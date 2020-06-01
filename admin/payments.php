@@ -39,9 +39,11 @@ if(isset($_SESSION['uid'])):
                     <option value="id">Payment No</option>
                     <option value="trx_id">Trx ID</option> 
                     <option value="purpose">Purpose</option> 
+                    <option value="purpose">Amount</option> 
                     <option value="date">Date</option> 
                     <option value="status">Status</option>
                     <option value="centre">Centre</option>
+                    <option value="centre">Month</option>
                 </select>
                 <button type="submit">Submit</button>
             </form>

@@ -1,0 +1,115 @@
+.paymentSingle{
+    padding: 100px 100px;
+    &__parentTable{
+        width: 100%;
+
+        .iquery_invoice{
+            text-transform: uppercase;
+            font-size: 50px;
+            span:first-child{
+                font-weight: bold;
+                color: #E75441;
+            }
+        }
+
+        .userInfo{
+            padding: 40px 0;
+            width: 100%;
+            td{
+                vertical-align: top;
+            }
+            td:nth-child(2){
+                text-align: right;
+                vertical-align: top;
+            }
+            .client_name{
+                font-size: 30px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            .address{
+                line-height: 32px;
+            }
+        }
+
+        .paymentInfo{
+            padding: 0px 0 70px 0;
+            width: 100%;
+
+            th{
+                border: 1px solid #d4d4d4;
+                padding: 0 20px;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: left;
+                background: #d4d4d4;
+            }
+
+            td{
+                border: 1px solid #d4d4d4;
+                padding: 8px 20px;
+                font-weight: 400;
+                font-size: 13px !important;
+                text-align: left;
+                text-transform: uppercase;
+                border-top: 0;
+            }
+        }
+
+        .footerInfo{
+            padding: 30px 50px;
+            width: 100%;
+            border:1px solid #D4D4D4;
+
+            tr td:not(.first){
+                padding: 15px 0;
+                border-top:1px solid #D4D4D4;
+                border-bottom:1px solid #D4D4D4;
+            }
+
+            strong{
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            .trx{
+                text-transform: uppercase;
+                color: #C85241;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+
+            .centre{
+                font-size: 20px;
+                padding-top: 40px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: #444;
+                text-align: center;
+            }
+
+            .pay{
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .autho{
+        text-align: right;
+        display: none;
+
+        span{
+            border-top: 1px solid #D4D4D4;
+            margin-top: 120px;
+            margin-right: 0px;
+            padding: 0 88px;
+        }
+    }
+
+    .payment_bottom{
+        margin-top: 50px;
+    }
+}
+
+

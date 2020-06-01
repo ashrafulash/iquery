@@ -28,6 +28,11 @@ function classAutoLoader($className){
         $dir = '../classes/';
     }
 
+      //check when class defined inside admin action folder
+    if(strpos($url, 'action') !==false){
+        $dir = '../../classes/';
+    }
+
 
     $path   =   $dir . $className . $ext;
     

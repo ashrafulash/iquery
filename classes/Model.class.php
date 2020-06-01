@@ -38,11 +38,18 @@ class Model extends Dbh{
         $stmt->execute([$status, $id]);
     }
 
+    //update status field
+    protected function update_oneField($table, $field,$search ,$set, $value){
+        $sql = 'UPDATE '. $table .' SET '.$set.' = ? WHERE '. $field . ' = ?'; 
+        $stmt  = $this->connect()->prepare($sql);
+        $stmt->execute([$value, $search]);
+    }
+
     //insert payment table
     protected function insert_payment($arr){  
         $sql = "INSERT INTO payment(student_id, trx_id, purpose, amount, date, status, centre, month) VALUES (? , ? , ? , ? , ? , ?, ?, ?)";
         $stmt = $this->connect()->prepare($sql);
-        $stmt->execute([$arr['student_id'], $arr['trx_id'], $arr['purpose'], 'null', $arr['date'], $arr['status'], $arr['centre'], 'null']); 
+        $stmt->execute([$arr['student_id'], $arr['trx_id'], $arr['purpose'], $arr['amount'], $arr['date'], $arr['status'], $arr['centre'], $arr['month']]); 
     }
 
 

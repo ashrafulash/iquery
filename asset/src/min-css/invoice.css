@@ -1,0 +1,52 @@
+@page{
+    size:8.3in 11.7in;
+    margin: 1.5in .5in;
+}
+
+@media print{
+    .admin__sidebar{
+        display: none;
+    }
+    .admin__content{
+        position: absolute;
+        width: 100%;
+        overflow-y: unset;
+        background: #fff;
+        padding: 0;
+    }
+
+    .paymentSingle{
+        padding: 0;
+    }
+
+    .iquery_invoice{
+        font-size: 40px !important;
+    }
+
+    .iquery_invoice span:nth-child(2){
+        opacity: .5;
+    }
+
+    .paymentSingle .address{
+        line-height: 20px !important;
+        color: #666;
+        font-size: 14px;
+    }
+    .paymentSingle .address strong{
+        color: #2D3E50;
+        font-weight: 400;
+    }
+
+    .centre{
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        }
+    .autho{
+        display: block !important;
+    }
+
+    .payment_bottom{
+        display: none;
+    }
+
+}

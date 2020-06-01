@@ -26,4 +26,9 @@ class Controller extends Model{
         $this->insert_token($token, $centre);
     }
 
+    //update one field
+    public function update_one($table, $field,$search ,$set, $value){
+        $this->update_oneField($table, $field,$search ,$set, $value);
+    }
+
 }

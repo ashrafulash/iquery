@@ -28,7 +28,7 @@
 </header>
 
 
-<section id="banner" style="background : var(--primary)">
+<section id="banner" class="switcher" style="background : var(--primary)">
 
     <div class="cont-inner">
       <div class="content">
@@ -48,7 +48,7 @@
 
 </section>
 
-<section id="about" style="background : var(--primary-main)">
+<section id="about" class="switcher sw-font" style="background : var(--primary-main)">
   <div class="cont-inner">
       <div class="row">
           <div class="col-lg-7 col-md-7">

@@ -91,19 +91,19 @@
                         <div class="content__box ins-1 active">
                           <h2 class="title">Authentic information</h2>
                           <p class="des">
-                            Bring traditional files, cloud content, Dropbox Paper docs, and web shortcuts together in one place—and work the way that works for you.
+                            The information given by you should be authentic according to your last academic certificate. The given information will be secured. 
                           </p>
                         </div>
                         <div class="content__box ins-2">
                             <h2 class="title">Optional &amp; Compolsary</h2>
                             <p class="des">
-                              Bring traditional files, cloud content, Dropbox Paper docs, and web shortcuts together in one place—and work the way that works for you.
+                              The input box with star marks (*) must be filled up with real information. However the input box without star mark (optional) can be empty. 
                             </p>
                         </div>
                         <div class="content__box ins-3">
                             <h2 class="title">Verify Yourself</h2>
                             <p class="des">
-                              Bring traditional files, cloud content, Dropbox Paper docs, and web shortcuts together in one place—and work the way that works for you.
+                              The picture you will attach to the form must be real and recent captured. It will help us to verify you. Your picture will be secured.
                             </p>
                         </div>
                         <div class="content__scroll">
@@ -156,11 +156,11 @@
               <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6 col-6">
                   <ul class="footer-memu">
                     <li><h2>Partners</h2></li>
-                    <li><a href="//invitationcentre.com/">Invitation English...</a></li>
+                    <li><a href="//invitationcentre.com/iecc/">Invitation English...</a></li>
                     <li><a href="//invitationcentre.com/ielts/">Invitation IELTS...</a></li>
                     <li><a href="//invitationcentre.com/idnc/">Day & Night Care</a></li>
                     <li><a href="//www.facebook.com/invitationsportsnews">Sports Club</a></li>
-                    <li><a href="//invitationcentre.com/">Invitation ICT Centre</a></li>
+                    <li><a href="//invitationcentre.com/ict">Invitation ICT Centre</a></li>
                   </ul>
               </div>
               <div class="col-lg-2 col-md-3 col-sm-6 col-6">

@@ -91,7 +91,7 @@ if(isset($_POST['token'])) :
                             <div class="custom-select" onclick="group_select_fun(this)" style="width:150px;">
                             <select>
                                 <option value="1">Select Group</option>
-                                <option value="1">humanities</option>
+                                <option value="1">Humanities</option>
                                 <option value="2">Business Study</option>
                                 <option value="3">Science</option>
                                 <option value="4">Other</option>

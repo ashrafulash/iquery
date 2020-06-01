@@ -5,6 +5,7 @@
 <div class="adm_choose">
     <label id="adm_choose_message"></label>
     <span>Choose Centre</span>
+    <input type="text" id="adm_token" placeholder="Enter Token">
     <label onclick="toggler('.adm_choose__option', 'open')" id="adm_selected_center" placeholder="Choose One">Select One <i class="fas fa-caret-down"></i></label>
     <ul class="adm_choose__option">
         <li><button id="adm_close_option_btn" onclick="toggler('.adm_choose__option', 'close')" ><i class="fas fa-compress-alt"></i></button></li>
@@ -14,7 +15,6 @@
         <li onclick="adm_selected_item('sports')">Invitation Sports Club</li>
         <li onclick="adm_selected_item('ict')">Invitation ICT Centre</li>
     </ul>
-    <input type="text" id="adm_token" placeholder="Enter Token">
     <button id="collect_token" onclick="pageRequest('admission/token.php', 500, '.adm_content')">Collect Token</button>
     
     <button id="adm_start">Start</button>

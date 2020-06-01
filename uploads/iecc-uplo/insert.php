@@ -101,7 +101,7 @@ if($cls->find_token('all', 'all', $token) == 'true'){
                                     'student_id'  =>   $token,
                                     'date'      =>  $date,
                                     'status'    =>  $status,
-                                    'amount'    => 'null',
+                                    'amount'    => '1250',
                                     'month'     => 'null',
                                     'trx_id'  =>   $_POST['trx'],
                                     'purpose' => 'admission with monthly fee',

@@ -97,7 +97,7 @@
                         <div class="content__box ins-2">
                             <h2 class="title">Optional &amp; Compolsary</h2>
                             <p class="des">
-                              The input box with star marks (*) must be filled up with real information. However the input box without star mark (optional) can be empty. 
+                              The input box with star marks (*) must be filled up with real information. However, the input box without star mark (optional) can be empty. 
                             </p>
                         </div>
                         <div class="content__box ins-3">
@@ -132,7 +132,7 @@
     <div class="cont-inner">
         <div class="heading">
             <h2 class="title">Our sister Concerns</h2>
-            <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sequi excepturi deserunt rem animi distinctio.</p>
+            <p class="des">We believe in unity. The team we've is honest, courageous and responsible. We work together to achieve our desired goal.</p>
         </div>
         <ul class="client-slider">
             <li><img class="w-100" src="asset/images/clients/client-1.png" alt="client-1"></li>

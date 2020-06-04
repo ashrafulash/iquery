@@ -13,7 +13,7 @@
             <div class="brows_image">
                 <input type="file" id="upphoto" style="display:none;">
                 <label for="upphoto">
-                    <span class="inputLabel">Choose File</span>
+                    <span class="inputLabel">Upload Picture</span>
                 </label>
             </div>
 

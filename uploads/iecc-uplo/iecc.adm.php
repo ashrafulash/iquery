@@ -100,7 +100,7 @@ echo '<div id="data" style="display:none;">'. json_encode($json) . '</div>';
     <!-- bkash function will take two paramitter 1. number 2. fee for the course -->
     <?php 
         include('../../template/bkash.php'); 
-        echo bkash('01677760308', '1250');
+        echo bkash('01677760308', '250tk');
     ?>
     
     <input type="text" id="trx_iecc" placeholder="Must type TrxID">

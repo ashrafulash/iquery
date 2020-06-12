@@ -60,7 +60,7 @@ if(isset($_SESSION['uid'])):
                                     <strong><?php echo $user['student_id'] ?></strong>
                                 </p>
                                 <p class="address">
-                                    Fatehr's Name :
+                                    Father's Name :
                                     <strong><?php echo $user['fatherFirstName'] . ' ' . $user['fatherMiddleName'] . ' ' . $user['fatherLastName'] ?></strong>
                                 </p>
                                 <p class="address">

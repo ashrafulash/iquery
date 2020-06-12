@@ -9,7 +9,7 @@
     </div>
     <div id="collapseEight" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
-      A student has to pay only 250tk. for admission and 1000tk. in advance for the month he is going to get admitted. It is noted that a student has to pay only 1000tk. for each month. 
+        A student has to pay only 250tk. for admission and 1000tk. in advance for the month he is going to get admitted. It is noted that a student has to pay only 1000tk. for each month. So the initial cost is 1250tk only.
       </div>
     </div>
   </div>

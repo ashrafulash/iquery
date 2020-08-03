@@ -1,14 +1,14 @@
 <?php
 class Dbh{
-    // private $host   = 'localhost';
-    // private $user   = 'themxygf_quiz';
-    // private $pwd    = 'tr{]zO&@MQ~S';
-    // private $dbName = 'themxygf_iquery';
-
     private $host   = 'localhost';
-    private $user   = 'root';
-    private $pwd    = '';
-    private $dbName = 'iquery'; 
+    private $user   = 'themxygf_quiz';
+    private $pwd    = 'tr{]zO&@MQ~S';
+    private $dbName = 'themxygf_iquery';
+
+    // private $host   = 'localhost';
+    // private $user   = 'root';
+    // private $pwd    = '';
+    // private $dbName = 'iquery'; 
 
     protected function connect(){
         $dsn    = 'mysql:host=' . $this->host . ';dbname=' . $this->dbName;

@@ -22,6 +22,7 @@
       </ul>
       <div class="nav-toggle">
         <button class="toggle-sidebar-btn"><i class="fas fa-bars"></i></button>
+
       </div>
     </div>
     </div>
@@ -32,6 +33,9 @@
 
     <div class="cont-inner">
       <div class="content">
+
+          <small class="adimission-text">Admission</small>
+
           <h3 class="sub">IQUERY</h3>
           <h1 class="title">
             Online Query Makes your life easy.

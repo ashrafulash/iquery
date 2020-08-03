@@ -9,7 +9,7 @@ function sass_cimpiler() {
   return src('asset/scss/*.scss')
     .pipe(sass(
         {
-            outputStyle : 'compressed'
+            outputStyle : 'uglify'
         }
     ).on('error', sass.logError))
     .pipe(browserSync.stream())

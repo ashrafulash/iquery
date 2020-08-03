@@ -116,6 +116,29 @@
         grid-area: banner;
         padding: $padding-y;
 
+        .adimission-text{
+            display: inline-block;
+            font-size: 30px;
+            position: absolute;
+            transform: rotate(90deg);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            top: 167px;
+            right: -39px;
+            color: var(--color-white);
+
+            @include large-tablet{
+                display: inline-block;
+            }
+
+            @include mobile{
+                right: -15px;
+                font-size: 21px;
+                top: 95px;
+                letter-spacing: 0;         
+            }
+        }
+
         @include large-tablet{
             padding-bottom: 0;
         }

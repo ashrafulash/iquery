@@ -1,0 +1,160 @@
+.no_data{
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 200px;
+    text-align: center;
+
+    @include tablet{
+        font-size: 28px;
+        padding: 200px 30px 0 30px;
+    }
+
+    @include mobile{
+        padding: 150px 10px 0 10px;
+    }
+}
+
+.try_again{
+    width: 200px;
+    background: var(--primary);
+    color: var(--primary-main);
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    margin:0 auto;
+    transform: translateY(30px);
+
+    &:hover{
+        color: #fff;
+    }
+}
+
+.payment_panel{
+    max-width: 500px;
+    margin: 0 auto;
+
+    .bkash_panel{
+        img{
+            width: 70%;
+            margin-bottom: 30px;
+        }
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        & > * {
+            margin: 10px;
+            padding: 0px 20px;
+        }
+
+        select{
+            padding: 10px 20px;
+        }
+
+        button{
+            background: var(--primary);
+            border: 0;
+            padding: 12px;
+            font-size: 20px;
+            color: var(--primary-main);
+        }
+    }
+}
+
+
+
+.payment_receive{
+   padding: 100px 0;
+   @include mobile{
+       padding: 30px 0;
+   }
+    img{
+        @include mobile{
+            width: 200px !important;
+            margin-bottom: 40px;
+        }
+    }
+   .student_details{
+       li{
+          font-size: 16px;
+          padding: 2px 15px;
+
+          &:not(:last-child){
+              border-bottom: 1px solid var(--primary-heading);
+              
+          }
+
+          span:first-child{
+              font-weight: 600;
+              width: 150px;
+          } 
+
+          span:last-child{
+              text-transform: uppercase;
+          }
+       }
+   }
+
+   .details{
+        padding-top: 50px;
+
+       ul{
+            padding: 20px 30px;
+            background: var(--primary-main);
+            li{
+
+                &:not(:last-child){
+                    border-bottom: 1px solid var(--primary-heading);
+                    padding: 5px 0;
+                }
+
+                font-size: 20px;
+                @include mobile{
+                    font-size: 16px;
+                }
+                span:first-child{
+                    font-weight: 500;
+                    width: 200px;
+
+                    @include mobile{
+                        width: 150px;
+                    }
+                }
+
+                span:last-child{
+                    text-transform: uppercase;
+                }
+            }
+
+            .trx{
+                color: red;
+                font-size: 24px;
+            }
+       }
+   }
+
+   .act_btn.accept:hover{
+       color: #fff;
+   }
+
+   .bottom{
+    .act_btn.accept{
+        @include tablet{
+            margin-top: 10px;
+        }
+    }
+
+    .act_btn.print{
+        @include tablet{
+            margin-top: 10px;
+        }
+    }
+   }
+
+}
+
+

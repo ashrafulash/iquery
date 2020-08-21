@@ -740,6 +740,106 @@ button {
     text-align: center;
     color: red; }
 
+.no_data {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .no_data {
+      font-size: 28px;
+      padding: 200px 30px 0 30px; } }
+  @media (max-width: 575.98px) {
+    .no_data {
+      padding: 150px 10px 0 10px; } }
+
+.try_again {
+  width: 200px;
+  background: var(--primary);
+  color: var(--primary-main);
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(30px); }
+  .try_again:hover {
+    color: #fff; }
+
+.payment_panel {
+  max-width: 500px;
+  margin: 0 auto; }
+  .payment_panel .bkash_panel img {
+    width: 70%;
+    margin-bottom: 30px; }
+  .payment_panel form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; }
+    .payment_panel form > * {
+      margin: 10px;
+      padding: 0px 20px; }
+    .payment_panel form select {
+      padding: 10px 20px; }
+    .payment_panel form button {
+      background: var(--primary);
+      border: 0;
+      padding: 12px;
+      font-size: 20px;
+      color: var(--primary-main); }
+
+.payment_receive {
+  padding: 100px 0; }
+  @media (max-width: 575.98px) {
+    .payment_receive {
+      padding: 30px 0; } }
+  @media (max-width: 575.98px) {
+    .payment_receive img {
+      width: 200px !important;
+      margin-bottom: 40px; } }
+  .payment_receive .student_details li {
+    font-size: 16px;
+    padding: 2px 15px; }
+    .payment_receive .student_details li:not(:last-child) {
+      border-bottom: 1px solid var(--primary-heading); }
+    .payment_receive .student_details li span:first-child {
+      font-weight: 600;
+      width: 150px; }
+    .payment_receive .student_details li span:last-child {
+      text-transform: uppercase; }
+  .payment_receive .details {
+    padding-top: 50px; }
+    .payment_receive .details ul {
+      padding: 20px 30px;
+      background: var(--primary-main); }
+      .payment_receive .details ul li {
+        font-size: 20px; }
+        .payment_receive .details ul li:not(:last-child) {
+          border-bottom: 1px solid var(--primary-heading);
+          padding: 5px 0; }
+        @media (max-width: 575.98px) {
+          .payment_receive .details ul li {
+            font-size: 16px; } }
+        .payment_receive .details ul li span:first-child {
+          font-weight: 500;
+          width: 200px; }
+          @media (max-width: 575.98px) {
+            .payment_receive .details ul li span:first-child {
+              width: 150px; } }
+        .payment_receive .details ul li span:last-child {
+          text-transform: uppercase; }
+      .payment_receive .details ul .trx {
+        color: red;
+        font-size: 24px; }
+  .payment_receive .act_btn.accept:hover {
+    color: #fff; }
+  @media (max-width: 768px) {
+    .payment_receive .bottom .act_btn.accept {
+      margin-top: 10px; } }
+  @media (max-width: 768px) {
+    .payment_receive .bottom .act_btn.print {
+      margin-top: 10px; } }
+
 #home_sidebar {
   width: 40vw;
   position: fixed;

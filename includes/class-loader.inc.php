@@ -13,6 +13,11 @@ function classAutoLoader($className){
         $dir = '../classes/';
     }
 
+     //check when class defined inside payment folter
+     if(strpos($url, 'payment') !== false){
+        $dir = '../classes/';
+    }
+
     //check when class defined inside token folter
     if(strpos($url, 'token') !==false){
         $dir = '../../classes/';

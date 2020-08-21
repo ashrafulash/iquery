@@ -1,0 +1,36 @@
+@page{
+    size:8.3in 11.7in;
+    margin: 1.5in .5in;
+}
+
+@media print{
+    .payment_receive{
+        padding: 0;
+    }
+    
+    .payment_receive img{
+       width: 300px !important;
+    }
+
+    .student_details{
+        margin-top: 30px;
+        max-width: 500px;
+    }
+
+    .offset-3{
+        margin-left: 0;
+    }
+
+    .details ul{
+        padding: 0 !important;
+    }
+
+    .details ul li{
+        padding: 5px 15px !important;
+    }
+
+    .bottom{
+        display: none;
+    }
+
+}

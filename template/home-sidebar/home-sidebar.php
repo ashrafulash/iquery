@@ -13,10 +13,10 @@
                 <a id="result_panel" href="#">Result</a>
             </li>
             <li>
-                <a href="#">Information</a>
+                <a id="payment_panel" href="#">Payment</a>
             </li>
             <li>
-                <a href="#">Payment</a>
+                <a href="#">Information</a>
             </li>
             <li>
                 <a href="#">Report</a>

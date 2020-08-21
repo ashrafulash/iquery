@@ -99,6 +99,9 @@ function header_color_match(sel, scroll){
         if(scroll > (offset - 100)){
                 var selector = $(sel);
 
+
+
+                
                 var current = selector.attr('style');
                 header.attr('style', transparent);
                 header.css({
@@ -366,6 +369,26 @@ function header_color_match(sel, scroll){
                 popup(true);
                 load_request({
                         url: 'login.php',
+                        time: 10,
+                        target : popup_body,
+                        obb:{request : 'ajax_request'}
+                })
+        })
+}());
+
+
+/*----------------------------------
+        Payment Panel
+-----------------------------------*/
+(function(){
+        var
+        btn   = $('#payment_panel'),
+        popup_body      = $(".popup-body")
+        btn.on('click', (e)=>{
+                e.preventDefault();
+                popup(true);
+                load_request({
+                        url: 'payment.php',
                         time: 10,
                         target : popup_body,
                         obb:{request : 'ajax_request'}

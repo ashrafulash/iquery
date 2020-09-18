@@ -46,8 +46,26 @@
     
 
     $file = $student_id. '.txt';
+
+    // see center type then show data
+
+if( $data['centre'] = 'Invitation ICT Centre' ){
+
+    $myfile = fopen("../uploads/ict-uplo/".$file, "r") or die("Unable to open file!");
+    $read = fread($myfile,filesize("../uploads/ict-uplo/".$file));
+
+}
+elseif( $data['centre'] = 'Invitation English Coaching Centre' ){
+
     $myfile = fopen("../uploads/iecc-uplo/".$file, "r") or die("Unable to open file!");
     $read = fread($myfile,filesize("../uploads/iecc-uplo/".$file));
+
+}
+
+
+
+
+
 
 
     //find trx id already used or not

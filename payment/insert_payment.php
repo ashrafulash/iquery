@@ -50,10 +50,34 @@ unset($_SESSION["student_id"]);
     </span>
     <h1 class="2 thanks__title">You're all set!</h1>
     <p class="thanks__des">Thanks For being awesome <br> We hope you enjoy learning with us.</p>
+
+    <?php
+
+        if($_SESSION["centre"] = 'Invitation ICT Centre'):
+
+    ?>
+    
+    <h2 class="thanks__founder">MD ASHRAFUL</h2>
+    <p class="thanks__degree">Web Developer at</p>
+    <p class="thanks__uni">XpeedStudio</p>
+
+    <?php
+
+        elseif($_SESSION["centre"] = 'Invitation English Coaching Centre'):
+
+    ?>
+
     <h2 class="thanks__founder">M.A. TAHER</h2>
     <p class="thanks__degree">M.A. in English Study</p>
     <p class="thanks__uni">Jahangirnagar University</p>
     
+    <?php
+
+        endif;
+
+    ?>
+
+
 </div>
 
 

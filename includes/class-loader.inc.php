@@ -28,6 +28,12 @@ function classAutoLoader($className){
         $dir = '../../classes/';
     }
 
+    
+    //check when class defined inside iecc-inc folder
+    if(strpos($url, 'ict-uplo') !==false){
+        $dir = '../../classes/';
+    }
+
      //check when class defined inside admin folder
     if(strpos($url, 'admin') !==false){
         $dir = '../classes/';

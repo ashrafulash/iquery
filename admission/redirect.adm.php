@@ -11,6 +11,10 @@
     if(obb.sel == 'Invitation English Coaching Centre'){
         validateRequest('admission/iecc/iecc.adm.php', '.adm_content', obb);
     }
+    // rediect request to ICT Admission page
+    else if(obb.sel == 'Invitation ICT Centre'){
+        validateRequest('admission/ict/ict.adm.php', '.adm_content', obb);
+    }
     else if(obb.sel == 'thanks'){
         validateRequest('admission/thanks.php', '.adm_content', obb);
     }

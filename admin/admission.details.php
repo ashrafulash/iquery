@@ -15,8 +15,26 @@ include('../includes/class-loader.inc.php');
 $cls = new Student();
 $data = $cls->one($_POST['inp'])[0];
 $file = $_POST['inp']. '.txt';
-$myfile = fopen("../uploads/iecc-uplo/".$file, "r") or die("Unable to open file!");
-$read = fread($myfile,filesize("../uploads/iecc-uplo/".$file));
+
+
+
+if( $data['centre'] = 'Invitation ICT Centre' ){
+
+    $myfile = fopen("../uploads/ict-uplo/".$file, "r") or die("Unable to open file!");
+    $read = fread($myfile,filesize("../uploads/ict-uplo/".$file));
+
+}
+elseif( $data['centre'] = 'Invitation English Coaching Centre' ){
+
+    $myfile = fopen("../uploads/iecc-uplo/".$file, "r") or die("Unable to open file!");
+    $read = fread($myfile,filesize("../uploads/iecc-uplo/".$file));
+
+}
+
+
+
+
+
 ?>
 
 <table id="online_application">
